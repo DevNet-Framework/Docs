@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="../css/bootstrap.min.css">
+   <link rel="stylesheet" href="../css/prism.css">
+   <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+   <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+         <div class="container">
+            <a class="navbar-brand" href="../index.html">DevNet</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                     <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="../index.html">Documentation</a>
+                  </li>
+               </ul>
+               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Versions
+                     </a>
+                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Version 0.1</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </header>
+   <main role="main" class="pb-3 bg-white">
+      <br>
+      <div class="container">
+         <div class="row">
+            <aside style="width: 260px;">
+               <nav id="accordion">
+                  <a href="" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><span class="arrow"></span>Get Started</a>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../start/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../start/console.html">Console application</a></li>
+                        <li><a class="nav-link text-dark" href="../start/web.html">Web application</a></li>
+                        <li><a class="nav-link text-dark" href="#">Configuration</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"><span class="arrow"></span>Fundamentals</a>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../fundamentals/middleware.html">Middleware</a></li>
+                        <li><a class="nav-link text-dark" href="../fundamentals/routing.html">Routing</a></li>
+                        <li><a class="nav-link text-dark" href="../fundamentals/dependency.html">Dependency injection</a></li>
+                        <li><a class="nav-link text-dark" href="#">Http message</a></li>
+                        <li><a class="nav-link text-dark" href="#">Error Handling</a></li>
+                        <li><a class="nav-link text-dark" href="#">Security</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><span class="arrow"></span>MVC</a>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../mvc/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../mvc/controller.html">Controller</a></li>
+                        <li><a class="nav-link text-dark" href="../mvc/view.html">View</a></li>
+                        <li><a class="nav-link text-dark" href="../mvc/layout.html">Layout</a></li>
+                        <li><a class="nav-link text-dark" href="../mvc/filters.html">Filters</a></li>
+                     </ul>
+                  </div>
+                  <a href="" class="menu" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><span class="arrow"></span>Entity ORM</a>
+                  <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark fw-bold" href="overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="model.html">Model</a></li>
+                        <li><a class="nav-link text-dark" href="querying.html">Querying Data</a></li>
+                        <li><a class="nav-link text-dark" href="saving.html#4">Saving Data</a></li>
+                        <li><a class="nav-link text-dark" href="relationships.html">Relationships</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"><span class="arrow"></span>Identity Manager</a>
+                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../identity/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../identity/data.html">User Data</a></li>
+                        <li><a class="nav-link text-dark" href="../identity/authentication.html">User Authentication</a></li>
+                        <li><a class="nav-link text-dark" href="../identity/roles.html">User Roles</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"><span class="arrow"></span>Core</a>
+                  <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="#">Typed Collection</a></li>
+                        <li><a class="nav-link text-dark" href="#">Generics</a></li>
+                        <li><a class="nav-link text-dark" href="#">Extension Method</a></li>
+                        <li><a class="nav-link text-dark" href="#">Linq data query</a></li>
+                        <li><a class="nav-link text-dark" href="#">Database Access Object</a></li>
+                        <li><a class="nav-link text-dark" href="#">Event Delegat</a></li>
+                        <li><a class="nav-link text-dark" href="#">Tasks</a></li>
+                        <li><a class="nav-link text-dark" href="#">CLI</a></li>
+                     </ul>
+                  </div>
+               </nav>
+            </aside>
+            <article class="flex-grow-1" style="width: 400px;">
+               <h1>Overview</h1>
+               <hr>
+               <p>
+                  Entity ORM (Object relational Mapping) is a system that offers an automated mechanism to developers for accessing and storing the data in the database, in object-oriented way by performing the work required to map between Entities defined in an application's programming language as classes and data stored in relational datasources as tables, without need the data-access code to be written.
+               </p>
+               <p>
+                  <b>EntityContext:</b> is the most important class of Entity ORM it implements the Unite of work pattern and represents a session with a database and provides an API for communicating with the database with the following capabilities:
+                  <ul>
+                     <li>Database Connections</li>
+                     <li>Data querying and persistance</li>
+                     <li>Change Tracking</li>
+                     <li>Model building</li>
+                     <li>Data Mapping</li>
+                     <li>Transaction management</li>
+                  </ul>
+               </p>
+               <p>
+                  <b>EntitySet:</b> is an implementation of the Repository pattern, represents a collection of classes for a given entity within the model and is the gateway to database operations against an entity, these classes are mapped by default to database tables that take the name of the DbSet property
+                  EntitySet classes are.
+               </p>
+               <p>
+                  <b>Entity:</b> is a class that maps to a database table. This class must be included as a <code>EntitySet</code> type property in the <code>EntityContext</code> class. by default Entity ORM maps each entity to a table and each property of an entity to a column in the database.<br>
+               </p>
+               <img src="../images/orm.svg" alt="Web app home page" width="100%" height="auto">
+               <br><br>
+               <h3>Defining EntityContext</h3>
+               <p>
+                  The recommended way to work with context is to define a context class in <b>"Models"</b> folder that derives from <code>EntityContext</code> and exposes <code>EntitySet</code> properties that represent collections of the specified entities in the context, as shown in the following example.
+               </p>
+               <pre><code class="language-php">
+                  &lt;?php
+
+                  namespace Application\Models;
+
+                  use Artister\System\Database\DbConnection;
+                  use Artister\DevNet\Entity\EntityContext;
+                  use Artister\DevNet\Entity\EntityModelBuilder;
+                  use Artister\DevNet\Entity\EntitySet;
+
+                  class EntityManager extends EntityContext
+                  {
+                     public function __construct(DbConnection $dbConnection)
+                     {
+                        parent::__construct($dbConnection);
+                     }
+
+                     public function __get(string $name) : void
+                     {
+                        return $this->$name;
+                     }
+                  }
+               </code></pre>
+               <h3>Registing EntityContext</h3>
+               <p>
+                  To use Entity ORM in our application we need to register and configure <code>EntityContext</code> as a service in configureServices method of Startup class using the Extension method <code>addEntityContext</code> as shown in the code below.
+                  <ul>
+                     <li><code>useConnection</code> method is used to connect to the database using a connection string</li>
+                     <li><code>useEntityContext</code> method is optionally used to define a derived EntityContext class</li>
+                  </ul>
+               </p>
+               <pre><code class="language-php">
+                  &lt;?php
+
+                  namespace Application;
+                  
+                  use Artister\DevNet\Dependency\IServiceCollection;
+                  use Artister\DevNet\Dispatcher\IApplicationBuilder;
+                  use Artister\DevNet\Extensions\DependencyExtensions;
+                  use Artister\DevNet\Extensions\HostingExtensions;
+                  use Application\Models\EntityManager;
+
+                  class Startup
+                  {
+                     public function configureServices(IServiceCollection $services)
+                     {
+                        $services->addEntityContext(function($options){
+                           $options->useConnection("mysql://user:password@127.0.0.1:3306/database");
+                           $options->useContext(EntityManager::class);
+                        });
+                     }
+                      ...
+                  }
+               </code></pre>
+               <p>
+                  <b>Note:</b> For sqlite database use <code>$options->useConnection("sqlite:///database.db");</code><br>
+                  You can also connect to other types of database by defining the database driver name as schema name of the Url.
+               </p>
+            </article>
+         </div>
+      </div>
+   </main>
+   <footer class="border-top footer text-muted bg-white">
+      <div class="container">
+         © 2020 - DevNet by Mohammed Moussaoui.
+      </div>
+   </footer>
+   <script src="../js/bootstrap.bundle.min.js"></script>
+   <script src="../js/prism.js"></script>
+</body>
+</html>

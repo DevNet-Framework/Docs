@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="../css/bootstrap.min.css">
+   <link rel="stylesheet" href="../css/prism.css">
+   <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+   <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+         <div class="container">
+            <a class="navbar-brand" href="../index.html">DevNet</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                     <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="../index.html">Documentation</a>
+                  </li>
+               </ul>
+               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Versions
+                     </a>
+                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Version 0.1</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </header>
+   <main role="main" class="pb-3 bg-white">
+      <br>
+      <div class="container">
+         <div class="row">
+            <aside style="width: 260px;">
+               <nav id="accordion">
+                  <a href="" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><span class="arrow"></span>Get Started</a>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../start/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../start/console.html">Console application</a></li>
+                        <li><a class="nav-link text-dark" href="../start/web.html">Web application</a></li>
+                        <li><a class="nav-link text-dark" href="#">Configuration</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"><span class="arrow"></span>Fundamentals</a>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../fundamentals/middleware.html">Middleware</a></li>
+                        <li><a class="nav-link text-dark" href="../fundamentals/routing.html">Routing</a></li>
+                        <li><a class="nav-link text-dark" href="../fundamentals/dependency.html">Dependency injection</a></li>
+                        <li><a class="nav-link text-dark" href="#">Http message</a></li>
+                        <li><a class="nav-link text-dark" href="#">Error Handling</a></li>
+                        <li><a class="nav-link text-dark" href="#">Security</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><span class="arrow"></span>MVC</a>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../mvc/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../mvc/controller.html">Controller</a></li>
+                        <li><a class="nav-link text-dark" href="../mvc/view.html">View</a></li>
+                        <li><a class="nav-link text-dark" href="../mvc/layout.html">Layout</a></li>
+                        <li><a class="nav-link text-dark" href="../mvc/filters.html">Filters</a></li>
+                     </ul>
+                  </div>
+                  <a href="" class="menu" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><span class="arrow"></span>Entity ORM</a>
+                  <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="model.html">Model</a></li>
+                        <li><a class="nav-link text-dark" href="querying.html">Querying Data</a></li>
+                        <li><a class="nav-link text-dark fw-bold" href="saving.html#4">Saving Data</a></li>
+                        <li><a class="nav-link text-dark" href="relationships.html">Relationships</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"><span class="arrow"></span>Identity Manager</a>
+                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../identity/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../identity/data.html">User Data</a></li>
+                        <li><a class="nav-link text-dark" href="../identity/authentication.html">User Authentication</a></li>
+                        <li><a class="nav-link text-dark" href="../identity/roles.html">User Roles</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"><span class="arrow"></span>Core</a>
+                  <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="#">Typed Collection</a></li>
+                        <li><a class="nav-link text-dark" href="#">Generics</a></li>
+                        <li><a class="nav-link text-dark" href="#">Extension Method</a></li>
+                        <li><a class="nav-link text-dark" href="#">Linq data query</a></li>
+                        <li><a class="nav-link text-dark" href="#">Database Access Object</a></li>
+                        <li><a class="nav-link text-dark" href="#">Event Delegat</a></li>
+                        <li><a class="nav-link text-dark" href="#">Tasks</a></li>
+                        <li><a class="nav-link text-dark" href="#">CLI</a></li>
+                     </ul>
+                  </div>
+               </nav>
+            </aside>
+            <article class="flex-grow-1" style="width: 400px;">
+               <h1>Saving Data</h1>
+               <hr>
+               <p>
+                  Each <code>Entitycontext</code> instance has a change tracker that is responsible for keeping track of changes that need to be written to the database. As you make changes to instances of your entity classes, these changes are recorded in the <code>EntityStateManager</code> and then written to the database when you call the <code>Save()</code> method, The database provider is responsible for translating the changes into database-specific operations (for example, INSERT, UPDATE, and DELETE commands for a relational database).
+               </p>
+               <h3>Adding Data</h3>
+               <p>
+                  Use the method <code>EntitySet::add(IEntity $entity)</code> to add new instances of your entity classes, and the data will be inserted in the database when you call the method <code>EntityContext::save()</code>.
+               </p>
+               <pre><code class="language-php">
+                  &lt;?php
+
+                  namespace Application\Controllers;
+
+                  use Artister\DevNet\Mvc\Controller;
+                  use Artister\DevNet\Mvc\IActionResult;
+                  use Artister\DevNet\Mvc\EntityManager;
+
+                  class StudentController extends Controller
+                  {
+                     private EntityManager $DbManager;
+
+                     public function __construct(EntityManager $dbManager)
+                     {
+                        $this->DbManager = $dbManager;
+                     }
+                     
+                     public function create($name) : IActionResult
+                     {
+                        $student = new student();
+                        $student->Name = $name;
+
+                        $students = $this->DbManager->Students;
+                        $students->add($student);
+                        $this->DbManager->save();
+                     }
+                  }
+               </code></pre>
+               <h3>Updating Data</h3>
+               <p>
+                  To update to the databaase, simply modify the values assigned to properties of a particular entity and then call the method <code>EntityContext::save()</code>, Entity ORM will automatically detect the changes made to an existing entity that is tracked by the context, this includes entities that you load from the database and entities that were previously added and saved to the database.
+               </p>
+               <pre><code class="language-php">
+                  ...
+                  public function update() : IActionResult
+                  {
+                     $students = $this->Entity->set(student::class);
+                     $student = $students->find(1);
+                     $student->Name = "Ted";
+                     $this->Entity->save();
+                  }
+               </code></pre>
+               <h3>Deleteing Data</h3>
+               <p>
+                  Use the method <code>EntitySet::remove(IEntity $entity)</code> to delete instances of your entity classes, If the entity already exists in the database, it will be deleted during saving the Changes, if the entity has not yet been saved to the database, then it will be removed from the context and will not be inserted when the method <code>EntityContext::save()</code> is called.
+               </p>
+               <pre><code class="language-php">
+                  ...
+                  public function delete() : IActionResult
+                  {
+                     $students = $this->Entity->set(student::class);
+                     $student = $students->find(1);
+                     $students->delete($student);
+                     $this->Entity->save();
+                  }
+               </code></pre>
+            </article>
+         </div>
+      </div>
+   </main>
+   <footer class="border-top footer text-muted bg-white">
+      <div class="container">
+         © 2020 - DevNet by Mohammed Moussaoui.
+      </div>
+   </footer>
+   <script src="../js/bootstrap.bundle.min.js"></script>
+   <script src="../js/prism.js"></script>
+</body>
+</html>

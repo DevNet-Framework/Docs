@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="../css/bootstrap.min.css">
+   <link rel="stylesheet" href="../css/prism.css">
+   <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+   <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+         <div class="container">
+            <a class="navbar-brand" href="../index.html">DevNet</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                     <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="../index.html">Documentation</a>
+                  </li>
+               </ul>
+               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Versions
+                     </a>
+                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Version 0.1</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </header>
+   <main role="main" class="pb-3 bg-white">
+      <div class="container">
+         <br>
+         <div class="row">
+            <aside style="width: 260px;">
+               <nav id="accordion">
+                  <a href="" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><span class="arrow"></span>Get Started</a>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../start/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../start/console.html">Console application</a></li>
+                        <li><a class="nav-link text-dark" href="../start/web.html">Web application</a></li>
+                        <li><a class="nav-link text-dark" href="#">Configuration</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"><span class="arrow"></span>Fundamentals</a>
+                  <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark fw-bold" href="middleware.html">Middleware</a></li>
+                        <li><a class="nav-link text-dark" href="routing.html">Routing</a></li>
+                        <li><a class="nav-link text-dark" href="dependency.html">Dependency injection</a></li>
+                        <li><a class="nav-link text-dark" href="#">Http message</a></li>
+                        <li><a class="nav-link text-dark" href="#">Error Handling</a></li>
+                        <li><a class="nav-link text-dark" href="#">Security</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><span class="arrow"></span>MVC</a>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../mvc/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../mvc/controller.html">Controller</a></li>
+                        <li><a class="nav-link text-dark" href="../mvc/view.html">View</a></li>
+                        <li><a class="nav-link text-dark" href="../mvc/layout.html">Layout</a></li>
+                        <li><a class="nav-link text-dark" href="../mvc/filters.html">Filters</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><span class="arrow"></span>Entity ORM</a>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../entity/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../entity/model.html">Model</a></li>
+                        <li><a class="nav-link text-dark" href="../entity/querying.html">Querying Data</a></li>
+                        <li><a class="nav-link text-dark" href="../entity/saving.html#4">Saving Data</a></li>
+                        <li><a class="nav-link text-dark" href="../entity/relationships.html">Relationships</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"><span class="arrow"></span>Identity Manager</a>
+                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../identity/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../identity/data.html">User Data</a></li>
+                        <li><a class="nav-link text-dark" href="../identity/authentication.html">User Authentication</a></li>
+                        <li><a class="nav-link text-dark" href="../identity/roles.html">User Roles</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"><span class="arrow"></span>Core</a>
+                  <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="#">Typed Collection</a></li>
+                        <li><a class="nav-link text-dark" href="#">Generics</a></li>
+                        <li><a class="nav-link text-dark" href="#">Extension Method</a></li>
+                        <li><a class="nav-link text-dark" href="#">Linq data query</a></li>
+                        <li><a class="nav-link text-dark" href="#">Database Access Object</a></li>
+                        <li><a class="nav-link text-dark" href="#">Event Delegat</a></li>
+                        <li><a class="nav-link text-dark" href="#">Tasks</a></li>
+                        <li><a class="nav-link text-dark" href="#">CLI</a></li>
+                     </ul>
+                  </div>
+               </nav>
+            </aside>
+            <article class="flex-grow-1" style="width: 400px;">
+               <h1>Middleware</h1>
+               <hr>
+               <p>
+                  Middlewares are software components that are chained into the application pipeline to handle Http requests and responses, Each middleware component in the request pipeline is responsible for invoking the next component called Request Delegate, till reach the endpoint of the application, and can perform work before and after the next component in the pipeline or short-circuiting the chain in case of filtring not allowed requests.
+               </p>
+               <img src="../images/middleware.svg" alt="Web app home page" width="100%" height="auto">
+               <br><br>
+               <h3>Creating middleware</h3>
+               <p>
+                  Middlewares are configured using <code>use</code> methods on the IApplicationBuilder type that is passed into the <code>configure(IApplicationBuilder $app)</code> method in the <code>startup</code> class, A middleware can be specified in-line as an anonymous method, or it can be defined in a reusable class implement <code>IMiddleware</code> class. These reusable classes are middleware, or middleware components. Each middleware component in the request pipeline is responsible for invoking the next component in the pipeline, or short-circuiting the chain if appropriate.
+               </p>
+               <pre><code class="language-php">
+                  &lt;?php
+                  
+                  use Artister\DevNet\Dependency\IServiceCollection;
+                  use Artister\DevNet\Dispatcher\IApplicationBuilder;
+                  use Artister\DevNet\Extensions\DependencyExtensions;
+                  use Artister\DevNet\Extensions\HostingExtensions;
+                  use Artister\System\Web\Http\HttpContext;
+                  use Artister\System\Process\Task;
+
+                  class Startup
+                  {
+                     ...
+                     public function configure(IApplicationBuilder $app)
+                     {
+                        $app->use(function(HttpContext $context, RequestDelegate $next) : Task {
+                           
+                           // can short-circuiting the pipeline if does not fulfil the condition.
+                           if (!$context->User)
+                           {
+                              return Task::completedTask();
+                           }
+                           // can do some work befor the next delegate.
+                           $next();
+                           // can do some work after the next delegate.
+                        });
+                     }
+                  }
+               </code></pre>
+               <h3>Middleware class</h3>
+               <p>
+                  You can create a Middleware in separated class implements <code>IMiddleware</code> interface, and then call it by the <code>use</code> method of <code>IApplicationBuilder</code> instance, inside <code>configure</code> methode of <code>Startup</code> class:
+               </p>
+               <pre><code class="language-php">
+                  &lt;?php
+                  
+                  namespace Application\Middlewares;
+
+                  use Artister\DevNet\Dispatcher\IMiddleware;
+                  use Artister\DevNet\Dispatcher\RequestDelegate;
+                  use Artister\DevNet\Http\HttpContext;
+                  use Artister\System\Process\Task;
+
+                  class MyMiddleware implements IMiddleware
+                  {
+                     public function __invoke(HttpContext $context, RequestDelegate $next) : Task
+                     {
+                        // can short-circuiting the pipeline if does not fulfil the condition.
+                        if (!$context->User)
+                        {
+                           return Task::completedTask();
+                        }
+                        // can do some work befor the next delegate.
+                        $next();
+                        // can do some work after the next delegate.
+                     }
+                  }
+               </code></pre>
+               <p>
+                  Using the <code>MyMiddleware</code> in the configuration:
+               </p>
+               <pre><code class="language-php">
+                  &lt;?php
+                  
+                  use Artister\DevNet\Dependency\IServiceCollection;
+                  use Artister\DevNet\Dispatcher\IApplicationBuilder;
+                  use Artister\DevNet\Extensions\DependencyExtensions;
+                  use Artister\DevNet\Extensions\HostingExtensions;
+                  use Application\Middlewares\MyMiddleware;
+
+                  class Startup
+                  {
+                     ...
+                     public function configure(IApplicationBuilder $app)
+                     {
+                        $app->use(MyMiddleware::class);
+                     }
+                  }
+               </code></pre>
+               <h3>Built-in middleware</h3>
+               <table class="table">
+                  <thead>
+                  <tr>
+                     <th scope="col">Middleware</th>
+                     <th scope="col">Discription</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                     <td>UseDeveloperExceptionHandler</td>
+                     <td>add ExceptionHandler middleware to the pipeline</td>
+                  </tr>
+                  <tr>
+                     <td>useRouter</td>
+                     <td>add Router matcher middleware to the pipeline</td>
+                  </tr>
+                  <tr>
+                     <td>useAuthentication</td>
+                     <td>add Authentication middleware to the pipeline</td>
+                  </tr>
+                  <tr>
+                     <td>useAuthorization</td>
+                     <td>add Authorization middleware to the pipeline</td>
+                  </tr>
+                  <tr>
+                     <td>UseEndpoint</td>
+                     <td>add Endpoint dispatcher middleware to the pipeline</td>
+                  </tr>
+                  </tbody>
+               </table>
+            </article>
+         </div>
+      </div>
+   </main>
+   <footer class="border-top footer text-muted bg-white">
+      <div class="container">
+         © 2020 - DevNet by Mohammed Moussaoui.
+      </div>
+   </footer>
+   <script src="../js/bootstrap.bundle.min.js"></script>
+   <script src="../js/prism.js"></script>
+</body>
+</html>

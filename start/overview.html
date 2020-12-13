@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="../css/bootstrap.min.css">
+   <link rel="stylesheet" href="../css/prism.css">
+   <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+   <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+         <div class="container">
+            <a class="navbar-brand" href="../index.html">DevNet</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                     <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="../index.html">Documentation</a>
+                  </li>
+               </ul>
+               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Versions
+                     </a>
+                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Version 0.1</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </header>
+   <main role="main" class="pb-3 bg-white">
+      <br>
+      <div class="container">
+         <div class="row">
+            <aside style="width: 260px;">
+               <nav id="accordion">
+                  <a href="#" class="menu" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><span class="arrow"></span>Get Started</a>
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark fw-bold" href="overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="console.html">Console application</a></li>
+                        <li><a class="nav-link text-dark" href="web.html">Web application</a></li>
+                        <li><a class="nav-link text-dark" href="#4">Configuration</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"><span class="arrow"></span>Fundamentals</a>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../fundamentals/middleware.html">Middleware</a></li>
+                        <li><a class="nav-link text-dark" href="../fundamentals/routing.html">Routing</a></li>
+                        <li><a class="nav-link text-dark" href="../fundamentals/dependency.html">Dependency injection</a></li>
+                        <li><a class="nav-link text-dark" href="#">Http message</a></li>
+                        <li><a class="nav-link text-dark" href="#">Error Handling</a></li>
+                        <li><a class="nav-link text-dark" href="#">Security</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><span class="arrow"></span>MVC</a>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../mvc/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../mvc/controller.html">Controller</a></li>
+                        <li><a class="nav-link text-dark" href="../mvc/view.html">View</a></li>
+                        <li><a class="nav-link text-dark" href="../mvc/layout.html">Layout</a></li>
+                        <li><a class="nav-link text-dark" href="../mvc/filters.html">Filters</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><span class="arrow"></span>Entity ORM</a>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../entity/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../entity/model.html">Model</a></li>
+                        <li><a class="nav-link text-dark" href="../entity/querying.html">Querying Data</a></li>
+                        <li><a class="nav-link text-dark" href="../entity/saving.html#4">Saving Data</a></li>
+                        <li><a class="nav-link text-dark" href="../entity/relationships.html">Relationships</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"><span class="arrow"></span>Identity Manager</a>
+                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../identity/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../identity/data.html">User Data</a></li>
+                        <li><a class="nav-link text-dark" href="../identity/authentication.html">User Authentication</a></li>
+                        <li><a class="nav-link text-dark" href="../identity/roles.html">User Roles</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"><span class="arrow"></span>Core</a>
+                  <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="#">Typed Collection</a></li>
+                        <li><a class="nav-link text-dark" href="#">Generics</a></li>
+                        <li><a class="nav-link text-dark" href="#">Extension Method</a></li>
+                        <li><a class="nav-link text-dark" href="#">Linq data query</a></li>
+                        <li><a class="nav-link text-dark" href="#">Database Access Object</a></li>
+                        <li><a class="nav-link text-dark" href="#">Event Delegat</a></li>
+                        <li><a class="nav-link text-dark" href="#">Tasks</a></li>
+                        <li><a class="nav-link text-dark" href="#">CLI</a></li>
+                     </ul>
+                  </div>
+               </nav>
+            </aside>
+            <article class="flex-grow-1" style="width: 400px;">
+               <h1>Overview</h1>
+               <hr>
+               <p>
+                  Devnet framework is free open-source, PHP software and cross-platform, with high-performance, for building console and modern web application, with rapid application development tools.
+               </p>
+               <h3>Server requirements</h3>
+               <p>
+                  Befor installing DevNet Framework, make sure your server meets the following requirements :
+                  <ul style="color: #d63384;">
+                     <li>PHP 7.4 or higher version</li>
+                     <li>JSON PHP Extension</li>
+                     <li>PDO PHP Extension</li>
+                     <li>Composer Dependency Manager</li>
+                  </ul>
+               </p>
+               <p>
+                  You can get the latest version of PHP from <a href="https://www.php.net/">php.net</a><br>
+                  also you can get Composer the PHP Dependency Manager from <a href="https://getcomposer.org/">getcomposer.org</a>
+               </p>
+               <h3>Installing Devnet</h3>
+               <p>
+                  To install Devnet Framework project please follow the following steps :
+               </p>
+               <ol>
+                  <li>Download or clone DevNet installer repository from <a href="https://github.com/DevNet-Framework/Installer">here</a></li>
+                  <li>Rename the folder project any name you want</li>
+                  <li>In the terminal, navigate to the root folder of your project and run the following command :</li>
+               </ol>
+               <pre class="terminal"><samp>
+composer install
+               </samp></pre>
+               <p>
+                  This will install only DevNet SDK with Components and liberies needed for your project, and in order to initialize and manage your project, use devnet command line tool that is provided by DevNet SDK. 
+               </p>
+               <p>
+                  To know how to use devent command line tool use the options <code>--help</code> like in the following command:
+               </p>
+               <pre class="terminal"><samp>
+./devnet --help
+               </samp></pre>
+               <p>
+                  <b>Note:</b> If you are using Linux do not forget to give execute permission to <samp>devnet</samp> command: <code>chmod +x ./devnet</code>
+               </p>
+            </article>
+         </div>
+      </div>
+   </main>
+   <footer class="border-top footer text-muted bg-white">
+      <div class="container">
+         © 2020 - DevNet by Mohammed Moussaoui.
+      </div>
+   </footer>
+   <script src="../js/bootstrap.bundle.min.js"></script>
+   <script src="../js/prism.js"></script>
+</body>
+</html>

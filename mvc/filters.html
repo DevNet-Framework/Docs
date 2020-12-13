@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="../css/bootstrap.min.css">
+   <link rel="stylesheet" href="../css/prism.css">
+   <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+   <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+         <div class="container">
+            <a class="navbar-brand" href="../index.html">DevNet</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                     <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="../index.html">Documentation</a>
+                  </li>
+               </ul>
+               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Versions
+                     </a>
+                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Version 0.1</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </header>
+   <main role="main" class="pb-3 bg-white">
+      <br>
+      <div class="container">
+         <div class="row">
+            <aside style="width: 260px;">
+               <nav id="accordion">
+                  <a href="" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><span class="arrow"></span>Get Started</a>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../start/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../start/console.html">Console application</a></li>
+                        <li><a class="nav-link text-dark" href="../start/web.html">Web application</a></li>
+                        <li><a class="nav-link text-dark" href="#">Configuration</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"><span class="arrow"></span>Fundamentals</a>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../fundamentals/middleware.html">Middleware</a></li>
+                        <li><a class="nav-link text-dark" href="../fundamentals/routing.html">Routing</a></li>
+                        <li><a class="nav-link text-dark" href="../fundamentals/dependency.html">Dependency injection</a></li>
+                        <li><a class="nav-link text-dark" href="#">Http message</a></li>
+                        <li><a class="nav-link text-dark" href="#">Error Handling</a></li>
+                        <li><a class="nav-link text-dark" href="#">Security</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><span class="arrow"></span>MVC</a>
+                  <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="controller.html">Controller</a></li>
+                        <li><a class="nav-link text-dark" href="view.html">View</a></li>
+                        <li><a class="nav-link text-dark" href="layout.html">Layout</a></li>
+                        <li><a class="nav-link text-dark fw-bold" href="filters.html">Filters</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><span class="arrow"></span>Entity ORM</a>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../entity/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../entity/model.html">Model</a></li>
+                        <li><a class="nav-link text-dark" href="../entity/querying.html">Querying Data</a></li>
+                        <li><a class="nav-link text-dark" href="../entity/saving.html#4">Saving Data</a></li>
+                        <li><a class="nav-link text-dark" href="../entity/relationships.html">Relationships</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"><span class="arrow"></span>Identity Manager</a>
+                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../identity/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../identity/data.html">User Data</a></li>
+                        <li><a class="nav-link text-dark" href="../identity/authentication.html">User Authentication</a></li>
+                        <li><a class="nav-link text-dark" href="../identity/roles.html">User Roles</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"><span class="arrow"></span>Core</a>
+                  <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="#">Typed Collection</a></li>
+                        <li><a class="nav-link text-dark" href="#">Generics</a></li>
+                        <li><a class="nav-link text-dark" href="#">Extension Method</a></li>
+                        <li><a class="nav-link text-dark" href="#">Linq data query</a></li>
+                        <li><a class="nav-link text-dark" href="#">Database Access Object</a></li>
+                        <li><a class="nav-link text-dark" href="#">Event Delegat</a></li>
+                        <li><a class="nav-link text-dark" href="#">Tasks</a></li>
+                        <li><a class="nav-link text-dark" href="#">CLI</a></li>
+                     </ul>
+                  </div>
+               </nav>
+            </aside>
+            <article class="flex-grow-1" style="width: 400px;">
+               <h1>Action Filter</h1>
+               <hr>
+               <p>
+                  Filters allow code to be run before or after specific stages in the request processing pipeline, like the Middlewars but hapend after the dispatcher selects the action to execute, in the action invoker level, befor and after the excution of the action.
+               </p>
+               <p>
+                  Filters can be created to handle cross-cutting concerns, for example configuration, authorization, caching, logging and error handling, and can choose to passe the request to the next filter or the endpoint or short-circuiting the pipeline, by returning the static method <code>Task::completedTask()</code>
+               </p>
+               <p>
+                  The following code show an example of an action filter class implements the interface <code>IActionFilter</code> which has only one method <code>onActionExecutionAsync</code> with tow parameters <code>ActionContext</code> as a context wrap all the data about the action and <code>ActionExecutionDelegate</code> which represent the execution of next action:
+               </p>
+               <pre><code class="language-php">
+                  &lt;?php
+
+                  namespace Artister\DevNet\Mvc\Filters;
+
+                  use Artister\DevNet\Mvc\IActionFilter;
+                  use Artister\DevNet\Mvc\ActionExecutionDelegate;
+                  use Artister\DevNet\Mvc\ActionContext;
+                  use Artister\DevNet\Http\HttpContext;
+                  use Artister\System\Process\Task;
+
+                  class MyActionFilter implements IActionFilter
+                  {
+                     public function onActionExecutionAsync(ActionContext $context, ActionExecutionDelegate $next) : Task
+                     {
+                        $httpContext = $context->ServiceProvider->getService(HttpContext::class);
+                        $httpContext->Response->Body->write("befor execution");
+                        $task = $next($context);
+                        $httpContext->Response->Body->write("after execution");
+
+                        if (!$httpContex->User)
+                        {
+                           return Task::completedTask();
+                        }
+
+                        return $task;
+                     }
+                  }
+               </code></pre>
+               <p>
+                  To configure the action filter, use the method <code>filter(string $target, string $filter, ?array $options)</code> in the controller constructor to select which action method the filter applies on it, like in this example the filter <code>MyActioinFiller</code> applies on the  <code>index()</code> method:
+               </p>
+               <pre><code class="language-php">
+                  &lt;?php
+
+                  namespace Application\Controllers;
+
+                  use Artister\DevNet\Mvc\Controller;
+                  use Artister\DevNet\Mvc\IActionResult;
+                  use Application\Filters\MyActionFilter;
+
+                  class HomeController extends Controller
+                  {
+                     public function __constrcut()
+                     {
+                        $this->filter('index', MyActionFilter::class);
+                     }
+                     
+                     public function index() : IActionResult
+                     {
+                        return $this->view("home/index");
+                     }
+                  }
+               </code></pre>
+               <h5>Built-in filter</h5>
+               <p>
+                  DevNet comes with Built-in filters such as the <b>Authorization</b> filter which prevente a not Authenticated or not authorized user to access to the application resources.
+               </p>
+            </article>
+         </div>
+      </div>
+   </main>
+   <footer class="border-top footer text-muted bg-white">
+      <div class="container">
+         © 2020 - DevNet by Mohammed Moussaoui.
+      </div>
+   </footer>
+   <script src="../js/bootstrap.bundle.min.js"></script>
+   <script src="../js/prism.js"></script>
+</body>
+</html>
