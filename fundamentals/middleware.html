@@ -119,40 +119,14 @@
                <br><br>
                <h3>Creating middleware</h3>
                <p>
-                  Middlewares are configured using <code>use</code> methods on the IApplicationBuilder type that is passed into the <code>configure(IApplicationBuilder $app)</code> method in the <code>startup</code> class, A middleware can be specified in-line as an anonymous method, or it can be defined in a reusable class implement <code>IMiddleware</code> class. These reusable classes are middleware, or middleware components. Each middleware component in the request pipeline is responsible for invoking the next component in the pipeline, or short-circuiting the chain if appropriate.
+                  Middlewares are configured using <code>use</code> methods on the IApplicationBuilder type that is passed into the <code>configure(IApplicationBuilder $app)</code> method in the <code>startup</code> class. 
                </p>
-               <pre><code class="language-php">
-                  &lt;?php
-                  
-                  use Artister\DevNet\Dependency\IServiceCollection;
-                  use Artister\DevNet\Dispatcher\IApplicationBuilder;
-                  use Artister\DevNet\Extensions\DependencyExtensions;
-                  use Artister\DevNet\Extensions\HostingExtensions;
-                  use Artister\System\Web\Http\HttpContext;
-                  use Artister\System\Process\Task;
-
-                  class Startup
-                  {
-                     ...
-                     public function configure(IApplicationBuilder $app)
-                     {
-                        $app->use(function(HttpContext $context, RequestDelegate $next) : Task {
-                           
-                           // can short-circuiting the pipeline if does not fulfil the condition.
-                           if (!$context->User)
-                           {
-                              return Task::completedTask();
-                           }
-                           // can do some work befor the next delegate.
-                           $next();
-                           // can do some work after the next delegate.
-                        });
-                     }
-                  }
-               </code></pre>
-               <h3>Middleware class</h3>
                <p>
-                  You can create a Middleware in separated class implements <code>IMiddleware</code> interface, and then call it by the <code>use</code> method of <code>IApplicationBuilder</code> instance, inside <code>configure</code> methode of <code>Startup</code> class:
+                  A middleware can be specified in-line as an anonymous method, or it can be defined in a reusable class implement <code>IMiddleware</code> interface, these reusable classes are middlewares, or middleware components,
+                  and each middleware component in the request pipeline is responsible for invoking the next component in the pipeline, or short-circuiting the chain if appropriate.
+               </p>
+               <p>
+                  The following example class <code>MyMiddleware</code> is an implemention of <code>IMiddleware</code> interface.
                </p>
                <pre><code class="language-php">
                   &lt;?php
@@ -196,10 +170,55 @@
                      ...
                      public function configure(IApplicationBuilder $app)
                      {
+                        $app->useRouter();
+
                         $app->use(MyMiddleware::class);
+
+                        $app->useEndpoint(function($routes) {
+                           $routes->mapRoute("default", "{controller=Home}/{action=Index}/{id?}");
+                       });
                      }
                   }
                </code></pre>
+               <p>
+                  You can also use middleware as anonymous function directley into the application:
+               </p>
+               <pre><code class="language-php">
+                  &lt;?php
+                  
+                  use Artister\DevNet\Dependency\IServiceCollection;
+                  use Artister\DevNet\Dispatcher\IApplicationBuilder;
+                  use Artister\DevNet\Extensions\DependencyExtensions;
+                  use Artister\DevNet\Extensions\HostingExtensions;
+                  use Artister\System\Web\Http\HttpContext;
+                  use Artister\System\Process\Task;
+
+                  class Startup
+                  {
+                     ...
+                     public function configure(IApplicationBuilder $app)
+                     {
+                        $app->useRouter();
+
+                        $app->use(function(HttpContext $context, RequestDelegate $next) : Task {
+                           
+                           // can short-circuiting the pipeline if does not fulfil the condition.
+                           if (!$context->User)
+                           {
+                              return Task::completedTask();
+                           }
+                           // can do some work befor the next delegate.
+                           $next();
+                           // can do some work after the next delegate.
+                        });
+
+                        $app->useEndpoint(function($routes) {
+                           $routes->mapRoute("default", "{controller=Home}/{action=Index}/{id?}");
+                       });
+                     }
+                  }
+               </code></pre>
+               
                <h3>Built-in middleware</h3>
                <table class="table">
                   <thead>
