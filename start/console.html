@@ -119,9 +119,7 @@
 ./devnet new console
                </samp></pre>
                <p>
-                  The template creates a simple <samp>"Hello World"</samp> application, has a class Program, with a single method Main,
-                  that takes an array of string as an arguments and calls a static method <code>Console::writeLine(String)</code>
-                  to display <samp>"Hello World!"</samp> in the terminal.
+                  The template creates a simple <samp>"Hello World"</samp> application, has a class <code>Program</code> with a single static method <code>Main</code>, that calls the static method <code>Console::writeLine(String $string)</code> which writes data to the output stream, followed by a new line terminator.
                </p>
                <pre><code class="language-php">
                   &lt;?php
@@ -134,7 +132,7 @@
                   {
                      public static function main(array $args = [])
                      {
-                        Console::writeline("Hello World!");
+                        Console::writeLine("Hello World!");
                      }
                   }
                </code></pre>
@@ -154,9 +152,10 @@ Hello World!
                </samp></pre>
                <h3>Command line arguments</h3>
                <p>
-                  To handle the input arguments passed to the main method this a little change in the template code, 
-                  it stores the first argument of the array <code>$args</code> in a variable <code>$name</code> and displays its value in the terminal with a message <samp>Hello {name}</samp>,
-                  if there is no arguments it will show a default message <samp>Hello World!</samp>.
+                  At the runtime, the input arguments are passed to the parameter <code>$args</code> of the static method <code>main(array $args)</code> in form of indexed array, and to handle these arguments just handle the values of the parameter <code>$args</code>.
+               </p>
+               <p>
+                  The following example, shows a simple code that handle the input arguments, it stores the value of the first argument of the array <code>$args</code> into the variable <code>$name</code>, using Null Coalescing operator, if the it is not set, it will set to the default value <code>"world"</code>, then pass it to the static method <code>write(string $string, ?array arguments)</code> to write the content <samp>Hello {name}</samp> to terminal, using formatted string pattern.
                </p>
                <pre><code class="language-php">
                   &lt;?php
@@ -170,7 +169,7 @@ Hello World!
                      public static function main(array $args = [])
                      {
                         $name = $args[0] ?? "World";
-                        Console::writeLine("Hello {$name}!");
+                        Console::write("Hello %s!", $name);
                      }
                   }
                </code></pre>
@@ -179,11 +178,15 @@ Hello World!
 ./devnet run Job
 Hello Job!
                </samp></pre>
+               <p>
+                  <b>Note:</b> The static method <code>write</code> does not insert a new line at the end of the text, use the escape sequence <code>\n</code> or use the static method <code>writeLine</code> instead, but keep in mind that the <code>writeLine</code> method does not support the formatted string like the <code>write</code> method.
+               </p>
                <h3>Console input</h3>
                <p>
-                  With the help of the static method <code>Console::readLine()</code>, 
-                  this code displays a prompt in the terminal and waits until the user enters a string followed by the Enter key. 
-                  It stores this string in a variable named name, and displays it in the terminal with a Hello Message.
+                  The static method <code>Console::readLine(?string $value)</code> reads the next line of characters from the console input stream, and returns it as a string data, it will pause the program execution, until the user type a data and presses the Enter key, optionally can write as text befor reading the input user.
+               </p>
+               <p>
+                  The following example code, displays a prompt in the terminal asking the user's name, and after the user input his name followed by the Enter key, it will return a hello message to the user by his name.
                </p>
                <pre><code class="language-php">
                   &lt;?php
@@ -198,7 +201,7 @@ Hello Job!
                      {
                         Console::writeLine("What is your name?");
                         $name = Console::readLine();
-                        Console::writeLine("Hello, {$name}!");
+                        Console::writeLine("Hello {$name}!");
                      }
                   }
                </code></pre>
@@ -229,9 +232,9 @@ Hello Job!
                      public static function main(array $args = [])
                      {
                         Console::foregroundColor(ConsoleColor::Yellow);
-                        Console::writeline("Hello");
+                        Console::write("Hello");
                         Console::backgroundColor(ConsoleColor::Magenta);
-                        Console::write(" World!");
+                        Console::writeLine(" World!");
                         Console::resetColor();
                      }
                   }
@@ -274,19 +277,19 @@ Hello Job!
                         <td class="text-center">Yes</td>
                      </tr>
                      <tr>
-                        <th scope="row">5</th>
+                        <th scope="row">3</th>
                         <td>Magenta</td>
                         <td class="text-center">Yes</td>
                         <td class="text-center">Yes</td>
                      </tr>
                      <tr>
-                        <th scope="row">3</th>
+                        <th scope="row">4</th>
                         <td>Blue</td>
                         <td class="text-center">Yes</td>
                         <td class="text-center">Yes</td>
                      </tr>
                      <tr>
-                        <th scope="row">4</th>
+                        <th scope="row">5</th>
                         <td>Cyan</td>
                         <td class="text-center">Yes</td>
                         <td class="text-center">Yes</td>
