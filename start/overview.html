@@ -127,31 +127,59 @@
                </p>
                <p>
                   You can get the latest version of PHP from <a href="https://www.php.net/">php.net</a><br>
-                  also you can get Composer the PHP Dependency Manager from <a href="https://getcomposer.org/">getcomposer.org</a>
+                  also you can get Composer the PHP Dependency Manager from <a href="https://getcomposer.org/">getcomposer.org</a><br>
+                  and you may need Git the distributed version control system from <a href="https://git-scm.com/">git-scm.com</a>
                </p>
-               <h3>Installing Devnet</h3>
+               <h3>Installing DevNet</h3>
                <p>
-                  To install Devnet Framework project please follow the following steps :
-               </p>
-               <ol>
-                  <li>Download or clone DevNet installer repository from <a href="https://github.com/DevNet-Framework/Installer">here</a></li>
-                  <li>Rename the folder project any name you want</li>
-                  <li>In the terminal, navigate to the root folder of your project and run the following command :</li>
-               </ol>
-               <pre class="terminal"><samp>
-composer install
-               </samp></pre>
-               <p>
-                  This will install only DevNet SDK with Components and liberies needed for your project, and in order to initialize and manage your project, use devnet command line tool that is provided by DevNet SDK. 
-               </p>
-               <p>
-                  To know how to use devent command line tool use the options <code>--help</code> like in the following command:
+                  DevNet will be installed globaly in your system, a single common runtime library for all the DevNet projects. <br>
+                  but first we need to config composer global minimum-stability to development, because DevNet is still in development <br>
+                  so in the terminal type the following command:
                </p>
                <pre class="terminal"><samp>
-./devnet --help
+composer global config minimum-stability dev
                </samp></pre>
                <p>
-                  <b>Note:</b> If you are using Linux do not forget to give execute permission to <samp>devnet</samp> command: <code>chmod +x ./devnet</code>
+                  <b>DevNet CLI</b> (Command Line Interpreter) is development tool for creating and running DevNet prjects, that rquire DevNet core library package, a basic common library needed for all DevNet componets.
+               </p>
+               <p>
+                  You need to install DevNet CLI globaly, by excuting the following command in the terminal:
+               </p>
+               <pre class="terminal"><samp>
+composer global rquire devnet/cli
+               </samp></pre>
+               <h5>Addtional DevNet Pakages:</h5>
+               <p>
+                  Installing DevNet CLI alone, can onley create and mange console aplication, and in order to create and mange other DevNet projects, that require a global installtion of addtional DevNet pakages.
+               </p>
+               <p>
+                  <b>DevNet Web</b> package is a collection of web components (HTTP, Middlewares, Router, view engine, and more...) that helps to create a web project in modern way.
+               </p>
+               <p>
+                  You can install DevNet Web package globaly, by executing the following conmmand line in your terminal:
+               </p>
+               <pre class="terminal"><samp>
+composer global rquire devnet/web
+               </samp></pre>
+               <p>
+                  <b>DevNet Entity</b> package is Object Relational Mapper system that helps to access and store data into the database, in object-oriented way.
+               </p>
+               <p>
+                  You can install DevNet Entity ORM package globaly by runing the following comand line in your terminal:
+               </p>
+               <pre class="terminal"><samp>
+composer global rquire devnet/entity
+               </samp></pre>
+               <h3>Using DevNet Command:</h3>
+               <p>
+                  For the first start you can run the devnet command with the option <code>--help</code> in your terminal, to help you how to use devent command line tool, as shown below:
+               </p>
+               <pre class="terminal"><samp>
+devnet --help
+               </samp></pre>
+               <p>
+                  <b>Note:</b> For linux users, do not forget to add into the System Environment Variables the following line: <br>
+                  <code>export PATH="$PATH:$HOME/.config/composer/vendor/bin"</code>
                </p>
             </article>
          </div>
