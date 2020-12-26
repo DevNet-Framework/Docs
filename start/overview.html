@@ -132,43 +132,37 @@
                </p>
                <h3>Installing DevNet</h3>
                <p>
-                  DevNet will be installed globaly in your system, a single common runtime library for all the DevNet projects. <br>
-                  but first we need to config composer global minimum-stability to development, because DevNet is still in development <br>
+                  <b>devnet/installer</b> is a metapackage that uses composer dependency manager, to install DevNet libraries globally through command line into your system, with a single runtime library for all the DevNet projects.
+               </p>
+               <p>
+                  But first we need to config composer global minimum-stability to development, because DevNet is still in development <br>
                   so in the terminal type the following command:
                </p>
                <pre class="terminal"><samp>
 composer global config minimum-stability dev
                </samp></pre>
                <p>
-                  <b>DevNet CLI</b> (Command Line Interpreter) is development tool for creating and running DevNet prjects, that rquire DevNet core library package, a basic common library needed for all DevNet componets.
-               </p>
-               <p>
-                  You need to install DevNet CLI globaly, by excuting the following command in the terminal:
+                  To Install DevNet framework globally, run the following command in the terminal:
                </p>
                <pre class="terminal"><samp>
-composer global rquire devnet/cli
-               </samp></pre>
-               <h5>Addtional DevNet Pakages:</h5>
-               <p>
-                  Installing DevNet CLI alone, can onley create and mange console aplication, and in order to create and mange other DevNet projects, that require a global installtion of addtional DevNet pakages.
-               </p>
-               <p>
-                  <b>DevNet Web</b> package is a collection of web components (HTTP, Middlewares, Router, view engine, and more...) that helps to create a web project in modern way.
-               </p>
-               <p>
-                  You can install DevNet Web package globaly, by executing the following conmmand line in your terminal:
-               </p>
-               <pre class="terminal"><samp>
-composer global rquire devnet/web
+composer global rquire devnet/installer
                </samp></pre>
                <p>
-                  <b>DevNet Entity</b> package is Object Relational Mapper system that helps to access and store data into the database, in object-oriented way.
+                  The installer will install four main DevNet packages:
+                  <ul>
+                     <li><b>devnet/core</b> a basic common library required by all DevNet components.</li>
+                     <li><b>devnet/cli</b> a command line Interpreter that has development tool, for creating and running DevNet prjects</li>
+                     <li><b>devnet/web</b> a collection of web components that helps to create a web project in modern way.</li>
+                     <li><b>devnet/entity</b> an object relational mapping system that helps to manipulate database, in object-oriented way.</li>
+                  </ul>
+                  If you don't want the full installation of DevNet framework, you can install onley the packages that fit your need, and choose whether to make the installation globally outside your project, or localy inside your project, and you can do the same with the third party libraries.
                </p>
+               <h3>Uninstalling DevNet</h3>
                <p>
-                  You can install DevNet Entity ORM package globaly by runing the following comand line in your terminal:
+                  To uninstall DevNet Framework globally, run the following command in the terminal:
                </p>
                <pre class="terminal"><samp>
-composer global rquire devnet/entity
+composer global remove devnet/installer
                </samp></pre>
                <h3>Using DevNet Command:</h3>
                <p>
