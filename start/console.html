@@ -115,9 +115,9 @@
                <p>
                   To create a Console Application, enter the following command in the Terminal :
                </p>
-               <pre class="terminal"><samp>
+               <pre class="terminal rounded"><code>
 devnet new console
-               </samp></pre>
+               </code></pre>
                <p>
                   The template creates a simple <samp>"Hello World"</samp> application, has a class <code>Program</code> with a single static method <code>Main</code>, that calls the static method <code>Console::writeLine(String $string)</code> which writes data to the output stream, followed by a new line terminator.
                </p>
@@ -140,16 +140,16 @@ devnet new console
                <p>
                   To run the application, run the following command in the Terminal :
                </p>
-               <pre class="terminal"><samp>
+               <pre class="terminal rounded"><code>
 devnet run
-               </samp></pre>
+               </code></pre>
                <p>
                   The program displays <samp>"Hello World!"</samp> and ends.
                </p>
-               <pre class="terminal"><samp>
+               <pre class="terminal rounded"><code>
 devnet run
 Hello World!
-               </samp></pre>
+               </code></pre>
                <h3>Command line arguments</h3>
                <p>
                   At the runtime, the input arguments are passed to the parameter <code>$args</code> of the static method <code>main(array $args)</code> in form of indexed array, and to handle these arguments just handle the values of the parameter <code>$args</code>.
@@ -174,10 +174,10 @@ Hello World!
                   }
                </code></pre>
                <h5>Output Example</h5>
-               <pre class="terminal"><samp>
+               <pre class="terminal rounded"><code>
 devnet run Job
 Hello Job!
-               </samp></pre>
+               </code></pre>
                <p>
                   <b>Note:</b> The static method <code>write</code> does not insert a new line at the end of the text, use the escape sequence <code>\n</code> or use the static method <code>writeLine</code> instead, but keep in mind that the <code>writeLine</code> method does not support the formatted string like the <code>write</code> method.
                </p>
@@ -206,12 +206,12 @@ Hello Job!
                   }
                </code></pre>
                <h5>Output Example</h5>
-               <pre class="terminal"><samp>
+               <pre class="terminal rounded"><code>
 devnet run
 What is your name?
 Job
 Hello Job!
-                  </samp></pre>
+                  </code></pre>
                <h3>Console Color</h3>
                <p>
                   The <code>Console</code> class has the static methodes <code>foregroundColor(int $colorCode)</code> and <code>backgroundColor(int $colorCode)</code> to set the foreground and background color of the console output respectively, and the static method <code>ResetColor()</code> to restore the output system to the original console color.
@@ -240,10 +240,10 @@ Hello Job!
                   }
                </code></pre>
                <h5>Output Example</h5>
-               <pre class="terminal"><samp>
+               <pre class="terminal rounded"><code>
 devnet run
 <code style="color: yellow;">Hello</code> <code style="color: yellow; background-color: magenta;">World!</code>
-               </samp></pre>
+               </code></pre>
                <h5>List of colors</h5>
                <p>
                   ConsoleColor class specifies constants that define foreground and background colors for the console.
