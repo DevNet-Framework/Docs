@@ -145,9 +145,9 @@
                   namespace Application\Models;
 
                   use Artister\System\Database\DbConnection;
-                  use Artister\DevNet\Entity\EntityContext;
-                  use Artister\DevNet\Entity\EntityModelBuilder;
-                  use Artister\DevNet\Entity\EntitySet;
+                  use Artister\Data\Entity\EntityContext;
+                  use Artister\Data\Entity\EntityModelBuilder;
+                  use Artister\Data\Entity\EntitySet;
 
                   class EntityManager extends EntityContext
                   {
@@ -175,10 +175,10 @@
 
                   namespace Application;
                   
-                  use Artister\DevNet\Dependency\IServiceCollection;
-                  use Artister\DevNet\Dispatcher\IApplicationBuilder;
-                  use Artister\DevNet\Extensions\DependencyExtensions;
-                  use Artister\DevNet\Extensions\HostingExtensions;
+                  use Artister\System\Dependency\IServiceCollection;
+                  use Artister\Web\Dispatcher\IApplicationBuilder;
+                  use Artister\Web\Extensions\DependencyExtensions;
+                  use Artister\Web\Extensions\HostingExtensions;
                   use Application\Models\EntityManager;
 
                   class Startup
@@ -193,10 +193,12 @@
                       ...
                   }
                </code></pre>
-               <p>
-                  <b>Note:</b> For sqlite database use <code>$options->useConnection("sqlite:///database.db");</code><br>
-                  You can also connect to other types of database by defining the database driver name as schema name of the Url.
-               </p>
+               <blockquote>
+                  <p>
+                     <b>Note:</b> For sqlite database use <code>$options->useConnection("sqlite:/path/to/database.db");</code><br>
+                     You can also connect to other types of database by defining the database driver name as schema name of the Url.
+                  </p>
+               </blockquote>
                <footer>
                   <nav class="no-print" aria-label="Page navigation">
                      <ul class="nav-page">

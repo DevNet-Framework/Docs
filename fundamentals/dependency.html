@@ -162,23 +162,32 @@
                <p>
                   Singleton lifetime services are created only once and Every subsequent request uses the same instance in the application life cycle.
                </p>
-               <h4>Registring services</h4>
+               <h3>Registring services</h3>
                <p>
-                  Services helps you register services with compelx dependencies and use them throw your application without hard coding, by using one of the
+                  Typically the <code>configureServices(IServiceCollection $services)</code> method of the <code>startup</code> class is responsible for defining the services that will be used throw your application without hard coding, Initially the <code>IServiceCollection</code> provided to configure services with complex dependencies by using one of the following methods:
+                  <ul>
+                     <li>
+                        <code>addSingleton(String $serviceType, String|Object|Closure $service);</code>
+                     </li>
+                     <li><code>addTransient(String $serviceType, String|Object|Closure $service);</code></li>
+                  </ul>
                </p>
                <p>
-                  The <code>configureServices(IServiceCollection $services)</code> method in the <code>startup</code> class is responsible for defining the services which will used in the application, Initially the <code>IServiceCollection</code> provided to configureServices has <code>addTransient</code> method to define Transient lifetime service and <code>addSingleton</code> method to define Singleton lifetime services, also has handful of extension methods of prebuid-services, defined in <code>DependencyExtensions</code> class.
+                  <code>addTransient</code> method to define Transient lifetime service and <code>addSingleton</code> method to define Singleton lifetime services, also has handful extension methods of prebuid-services, defined in <code>DependencyExtensions</code> class.
                </p>
                <p>
-                  The following code shows 
+                  Services are defined using the same service type class, parent class or interface that the service is implementing, which will be used later to call the service from the service provider.
+               </p>
+               <p>
+                  The following code shows an example of registring tow services, <code>MyDependency</code> registred with Transient lifetime, defined by the same service type, and <code>MyService</code> with singleton lifetime defined by <code>IMyService</code> interface:
                </p>
                <pre><code class="language-php">
                   &lt;?php
                   
-                  use Artister\DevNet\Dependency\IServiceCollection;
-                  use Artister\DevNet\Dispatcher\IApplicationBuilder;
-                  use Artister\DevNet\Extensions\DependencyExtensions;
-                  use Artister\DevNet\Extensions\HostingExtensions
+                  use Artister\System\Dependency\IServiceCollection;
+                  use Artister\Web\Dispatcher\IApplicationBuilder;
+                  use Artister\Web\Extensions\DependencyExtensions;
+                  use Artister\Web\Extensions\HostingExtensions
                   use Appplication\Services\IMyService;
                   use Appplication\Services\MyService;
                   use Appplication\Services\MyDependency;
@@ -187,28 +196,27 @@
                   {
                      public function configureServices(IServiceCollection $services)
                      {
-                        services.AddSingleton(MyDependency::class);
+                        services.addTransient(MyDependency::class);
 
-                        services.AddTransient(IMyService::class, MyService::class);
+                        services.addSingleton(IMyService::class, MyService::class);
                      }
                      ...
                   }
                </code></pre>
                <h3>Requesting Services</h3>
                <p>
-                  The services are available within a request from <code>HttpContext</code>, exposed through the RequestServices collection.<br>
-                  When your objects specify dependencies, these are satisfied by the types found in RequestServices.
+                  The services are available within <code>IServiceProvider</code> which can be requested from <code>HttpContext</code>, exposed through the RequestServices property, and onley dependencies those are satisfied by the types found in RequestServices can be returned, using the method <code>getService</code>.
                </p>
                <p>
-                  The code below shows 
+                  The code below shows an example of requesting tow services registred in the previous example:
                </p>
                <pre><code class="language-php">
                   ...
                   $app->useEndpoint(function($routes) {
                      $routes->mapGet("/service", function(HttpContext $context) : Task
                      {
-                        $service1 = HttpContext->RequestServices->getService(MyService::class);
-                        $service2 = HttpContext->RequestServices->getService(MyService::class);
+                        $service1 = HttpContext->RequestServices->getService(IMyService::class);
+                        $service2 = HttpContext->RequestServices->getService(IMyService::class);
                         
                         $output = "Service Id: ". $service1->getId()." & Dependency Id: ". $service1->DependencyId()."&lt;br>";
                         $output .= "Service Id: ". $service2->getId()." & Dependency Id: ". $service2->DependencyId();
@@ -220,27 +228,58 @@
                   });
                </code></pre>
                <h5>Output Example</h5>
-               <pre class="language-php">
-Service Id: 1 & Dependency Id: 1
-Service Id: 2 & Dependency Id: 1</pre>
-               <h3>Dependency injection into controllers</h3>
+               <pre class="language-html"><code>
+                  Service Id: 1 & Dependency Id: 1
+                  Service Id: 1 & Dependency Id: 2
+               </code></pre>
                <p>
-                  Services are injected into controllers as a constructor parameter, and the runtime resolves the service from the service container. Services are typically defined using interfaces. 
+                  The result of the example above, shows that the service of type <code>IService</code> has the same <code>Id</code> whatever how many time we call it from the container, it stay the same, becasue it was registred with <b>Singleton lifetime</b>, however the service of type <code>MyDependety</code> changes its <code>Id</code> every time we call it, becasue it was registred with <b>Transient lifetime</b>.
+               </p>
+               <h3>Registring Services With Custom Factory</h3>
+               <p>
+                  Devnet Service container use Service Activator to create your dependency when you call it, but if you want to resolve the instanciation of your dependency in your way, DevNet service container allows you to implement your own factory using closure function that has <code>IServiceProvider</code> parameter to allow you to call any service registred within <code>IServiceCollection</code> and use it as a dependency for your service creation proccess as shown in the following example:
+               </p>
+               <pre><code class="language-php">
+                  &lt;?php
+                  
+                  use Artister\System\Dependency\IServiceCollection;
+                  use Artister\Web\Dispatcher\IApplicationBuilder;
+                  use Artister\Web\Extensions\DependencyExtensions;
+                  use Artister\Web\Extensions\HostingExtensions
+                  use Appplication\Services\IMyService;
+                  use Appplication\Services\MyService;
+                  use Appplication\Services\MyDependency;
+
+                  class Startup
+                  {
+                     public function configureServices(IServiceCollection $services)
+                     {
+                        services.addSingleton(IMyService::class, 
+                           fn($provider) => new MyService($provider->getService(MyDependency::class)));
+                        
+                        services.addTransient(MyDependency::class);
+                     }
+                     ...
+                  }
+               </code></pre>
+               <h3>Requesting Services Through Controller</h3>
+               <p>
+                  Services are injected into controllers as a constructor parameter, during the creation of the controller, the service activator resolves the services from <code>IServiceCollection</code> that matches the parameter types of the controller's constructor and injectes them into it.
                </p>
                <pre><code class="language-php">
                   &lt;?php
                   
                   namespace Application\Controllers;
 
-                  use Artister\DevNet\Mvc\Controller;
-                  use Artister\DevNet\Mvc\IActionResult;
-                  use Application\Services\MyService;
+                  use Artister\Web\Mvc\Controller;
+                  use Artister\Web\Mvc\IActionResult;
+                  use Application\Services\IMyService;
 
                   class HelloController extends Controller
                   {
-                     private MyService $MyService;
+                     private IMyService $MyService;
 
-                     public function __construct(MyService $myService)
+                     public function __construct(IMyService $myService)
                      {
                         $this->MyService = $myService;
                      }

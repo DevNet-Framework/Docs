@@ -126,11 +126,11 @@
 
                   namespace Artister\DevNet\Mvc\Filters;
 
-                  use Artister\DevNet\Mvc\IActionFilter;
-                  use Artister\DevNet\Mvc\ActionExecutionDelegate;
-                  use Artister\DevNet\Mvc\ActionContext;
-                  use Artister\DevNet\Http\HttpContext;
                   use Artister\System\Process\Task;
+                  use Artister\Web\Mvc\IActionFilter;
+                  use Artister\Web\Mvc\ActionExecutionDelegate;
+                  use Artister\Web\Mvc\ActionContext;
+                  use Artister\Web\Http\HttpContext;
 
                   class MyActionFilter implements IActionFilter
                   {
@@ -158,8 +158,8 @@
 
                   namespace Application\Controllers;
 
-                  use Artister\DevNet\Mvc\Controller;
-                  use Artister\DevNet\Mvc\IActionResult;
+                  use Artister\Web\Mvc\Controller;
+                  use Artister\Web\Mvc\IActionResult;
                   use Application\Filters\MyActionFilter;
 
                   class HomeController extends Controller

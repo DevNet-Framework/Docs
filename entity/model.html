@@ -127,7 +127,7 @@
 
                   namespace Application\Models;
 
-                  use Artister\DevNet\Entity\IEntity;
+                  use Artister\Data\Entity\IEntity;
 
                   class Student implements IEntity
                   {
@@ -146,9 +146,11 @@
                      }
                   }
                </code></pre>
-               <p>
-                  <b>Note:</b> DevNet SDK will create an empty entity class with one property <code>Id</code>, you have to define the other properties manualy.
-               </p>
+               <blockquote>
+                  <p>
+                     <b>Note:</b> DevNet SDK will create an empty entity class with one property <code>Id</code>, you have to define the other properties manualy.
+                  </p>
+               </blockquote>
                <h5>Inisialiation of netity set</h5>
                <p>
                   adding entity reposotory into the context.
@@ -159,9 +161,9 @@
                   namespace Application\Models;
 
                   use Artister\System\Database\DbConnection;
-                  use Artister\DevNet\Entity\EntityContext;
-                  use Artister\DevNet\Entity\EntityModelBuilder;
-                  use Artister\DevNet\Entity\EntitySet;
+                  use Artister\Data\Entity\EntityContext;
+                  use Artister\Data\Entity\EntityModelBuilder;
+                  use Artister\Data\Entity\EntitySet;
 
                   class EntityManager extends EntityContext
                   {
@@ -192,9 +194,9 @@
 
                   namespace Application\Models;
 
-                  use Artister\DevNet\Entity\EntityContext;
-                  use Artister\DevNet\Entity\EntityModelBuilder;
-                  use Artister\DevNet\Entity\EntitySet;
+                  use Artister\Data\Entity\EntityContext;
+                  use Artister\Data\Entity\EntityModelBuilder;
+                  use Artister\Data\Entity\EntitySet;
 
                   class EntityManager extends EntityContext
                   {
@@ -214,10 +216,12 @@
                      }
                   }
                </code></pre>
-               <p>
-                  <b>Note:</b> API configuration has the highest precedence and will override conventions and data annotations.<br>
-                  If some table attributes not configured for the given entity, they will be configured by convention.
-               </p>
+               <blockquote>
+                  <p>
+                     <b>Note:</b> API configuration has the highest precedence and will override conventions and data annotations.<br>
+                     If some table attributes not configured for the given entity, they will be configured by convention.
+                  </p>
+               </blockquote>
                <footer>
                   <nav class="no-print" aria-label="Page navigation">
                      <ul class="nav-page">

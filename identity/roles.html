@@ -115,19 +115,19 @@
                <pre><code class="language-php">
                   namespace Application\Controllers;
 
-                  use Artister\DevNet\Mvc\Controller;
-                  use Artister\DevNet\Mvc\IActionResult;
-                  use Artister\DevNet\Identity\IdentityManager;
-                  use Artister\DevNet\Identity\UserManager;
-                  use Artister\DevNet\Identity\RoleManager;
-                  use Artister\DevNet\Identity\User;
-                  use Artister\DevNet\Identity\Role;
+                  use Artister\Web\Mvc\Controller;
+                  use Artister\Web\Mvc\IActionResult;
+                  use Artister\Web\Identity\IdentityManager;
+                  use Artister\Web\Identity\UserManager;
+                  use Artister\Web\Identity\RoleManager;
+                  use Artister\Web\Identity\User;
+                  use Artister\Web\Identity\Role;
 
                   class AccountController extends Controller
                   {
-                     private IdentityManager Identity;
-                     private UserManager Users;
-                     private RoleManager Roles;
+                     private IdentityManager $Identity;
+                     private UserManager $Users;
+                     private RoleManager $Roles;
                      
                      public function __construct(IdentityManager $identity, UserManager $users, RoleManager $roles)
                      {

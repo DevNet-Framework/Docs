@@ -117,14 +117,14 @@
 
                   namespace Application\Controllers;
 
-                  use Artister\DevNet\Mvc\Controller;
-                  use Artister\DevNet\Mvc\IActionResult;
-                  use Artister\DevNet\Identity\UserManager;
-                  use Artister\DevNet\Identity\User;
+                  use Artister\Web\Mvc\Controller;
+                  use Artister\Web\Mvc\IActionResult;
+                  use Artister\Web\Identity\UserManager;
+                  use Artister\Web\Identity\User;
 
                   class AccountController extends Controller
                   {
-                     private UserManager Users;
+                     private UserManager $Users;
                      
                      public function __construct(UserManager $users)
                      {

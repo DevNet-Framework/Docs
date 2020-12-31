@@ -124,9 +124,9 @@
 
                   namespace Application\Controllers;
 
-                  use Artister\DevNet\Mvc\Controller;
-                  use Artister\DevNet\Mvc\IActionResult;
-                  use Artister\DevNet\Mvc\EntityManager;
+                  use Artister\Web\Mvc\Controller;
+                  use Artister\Web\Mvc\IActionResult;
+                  use Artister\Web\Mvc\EntityManager;
 
                   class HelloController extends Controller
                   {
@@ -177,9 +177,13 @@
                   <code>EntitySet</code> implements <code>IQueryable</code> interface so it can use LINQ (Language-Integrated Query) to query data from the database, which allows you to use programing language to write strongly typed queries, by passing a representation of the LINQ query to the database provider in form of lambda expressions (closure function, arrow function) which can be muti functions chained together, and Database provider in turn translate it to database-specific query language (sqlite, mysql, ...) and return a data.
                </p>
                <p>
-                  Linq methods are extension methods so in order to this feature you have to define the extension namespace <code>Artister\System\Linq;</code> using the key word <code>use</code> in every class, or code use Linq methods on instance of <code>EntitySet</code>. <br>
-                  Queries are always executed against the database even if the entities returned in the result already exist in the.
+                  Linq methods are extension methods so in order to use this feature you have to define the extension namespace <code>Artister\System\Linq;</code> using the key word <code>use</code> in every class, or code use Linq methods on instance of <code>EntitySet</code>. <br>
                </p>
+               <blockquote>
+                  <p>
+                     <b>Note:</b> Queries are always executed against the database even if the entities returned in the result already exist in the tracker.
+                  </p>
+               </blockquote>
                <h5>Filtering Data</h5>
                <p>
                   Use the extension method <code>EntitySet::Where(closure $predecate)</code> to filter the data. <br>
@@ -190,9 +194,9 @@
 
                   namespace Application\Controllers;
 
-                  use Artister\DevNet\Mvc\Controller;
-                  use Artister\DevNet\Mvc\IActionResult;
-                  use Artister\DevNet\Mvc\EntityManager;
+                  use Artister\Web\Mvc\Controller;
+                  use Artister\Web\Mvc\IActionResult;
+                  use Artister\Web\Mvc\EntityManager;
                   use Artister\System\Linq;
 
                   class HelloController extends Controller
@@ -225,9 +229,11 @@
                                                  ->toArray();
                   }
                </code></pre>
-               <p>
-                  <b>Note:</b> For the reverse ordoring you can use the methods <code>orderByDescending</code> and <code>thenByDescending</code>
-               </p>
+               <blockquote>
+                  <p>
+                     <b>Note:</b> For the reverse ordoring you can use the methods <code>orderByDescending</code> and <code>thenByDescending</code>
+                  </p>
+               </blockquote>
                <h5>Complex Query</h5>
                <p>
                   You can use filer query <code>where</code> and ordering query like <code>orderBy</code> together. <br>

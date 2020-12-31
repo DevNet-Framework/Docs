@@ -138,10 +138,10 @@
                   
                   namespace Application;
                   
-                  use Artister\DevNet\Dependency\IServiceCollection;
-                  use Artister\DevNet\Dispatcher\IApplicationBuilder;
-                  use Artister\DevNet\Extensions\DependencyExtensions;
-                  use Artister\DevNet\Extensions\HostingExtensions;
+                  use Artister\System\Dependency\IServiceCollection;
+                  use Artister\Web\Dispatcher\IApplicationBuilder;
+                  use Artister\Web\Extensions\DependencyExtensions;
+                  use Artister\Web\Extensions\HostingExtensions;
                   
                   class Startup
                   {
@@ -180,9 +180,11 @@
                      }
                   }
                </code></pre>
-               <p>
-                  <b>Note:</b> if you add a Literal route with Conventional route make sure to put the conventional route at the buttom of the routes list, because it has a greedy pattern and will catch all the urls.
-               </p>
+               <blockquote>
+                  <p>
+                     <b>Note:</b> if you add a Literal route with Conventional route make sure to put the conventional route at the buttom of the routes list, because it has a greedy pattern and will catch all the urls.
+                  </p>
+               </blockquote>
                <footer>
                   <nav class="no-print" aria-label="Page navigation">
                      <ul class="nav-page">
