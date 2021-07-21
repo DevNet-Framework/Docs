@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="../css/bootstrap.min.css">
+   <link rel="stylesheet" href="../css/prism.css">
+   <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+   <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+         <div class="container">
+            <a class="navbar-brand" href="../index.html">DevNet</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                     <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="../index.html">Documentation</a>
+                  </li>
+               </ul>
+               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Versions
+                     </a>
+                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">v1.0.0</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </header>
+   <main role="main" class="pb-3 bg-white">
+      <br>
+      <div class="container">
+         <div class="row">
+            <aside style="width: 260px;">
+               <nav id="accordion">
+                  <a href="#" class="menu" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><span class="arrow"></span>CLI</a>
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="start.html">Get Started</a></li>
+                        <li><a class="nav-link text-dark fw-bold" href="console.html">Console application</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"><span class="arrow"></span>Fundamentals</a>
+                  <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../fundamentals/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="#">Generic Collections</a></li>
+                        <li><a class="nav-link text-dark" href="#">Event Delegat</a></li>
+                        <li><a class="nav-link text-dark" href="#">Async Tasks</a></li>
+                        <li><a class="nav-link text-dark" href="#">Extension Method</a></li>
+                        <li><a class="nav-link text-dark" href="#">Linq data query</a></li>
+                        <li><a class="nav-link text-dark" href="#">Database Access Object</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"><span class="arrow"></span>Core</a>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../core/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../core/start.html">Get Started</a></li>
+                        <li><a class="nav-link text-dark" href="../core/middleware.html">Middleware</a></li>
+                        <li><a class="nav-link text-dark" href="../core/routing.html">Routing</a></li>
+                        <li><a class="nav-link text-dark" href="../core/dependency.html">Dependency injection</a></li>
+                        <li><a class="nav-link text-dark" href="../core/exception.html">Error Handling</a></li>
+                        <li><a class="nav-link text-dark" href="#">Http message</a></li>
+                        <li><a class="nav-link text-dark" href="#">Security</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><span class="arrow"></span>MVC</a>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../mvc/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../mvc/start.html">Get Started</a></li>
+                        <li><a class="nav-link text-dark" href="../mvc/controller.html">Controller</a></li>
+                        <li><a class="nav-link text-dark" href="../mvc/view.html">View</a></li>
+                        <li><a class="nav-link text-dark" href="../mvc/layout.html">Layout</a></li>
+                        <li><a class="nav-link text-dark" href="../mvc/filters.html">Filters</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><span class="arrow"></span>Entity ORM</a>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../entity/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../entity/model.html">Model</a></li>
+                        <li><a class="nav-link text-dark" href="../entity/querying.html">Querying Data</a></li>
+                        <li><a class="nav-link text-dark" href="../entity/saving.html#4">Saving Data</a></li>
+                        <li><a class="nav-link text-dark" href="../entity/relationships.html">Relationships</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"><span class="arrow"></span>Identity Manager</a>
+                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../identity/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../identity/data.html">User Data</a></li>
+                        <li><a class="nav-link text-dark" href="../identity/authentication.html">User Authentication</a></li>
+                        <li><a class="nav-link text-dark" href="../identity/roles.html">User Roles</a></li>
+                     </ul>
+                  </div>
+               </nav>
+            </aside>
+            <article class="flex-grow-1" style="width: 400px;">
+               <h1>Console Application</h1>
+               <hr>
+               <p>
+                  To create a Console Application, enter the following command in the Terminal :
+               </p>
+               <pre class="terminal rounded"><code>
+devnet new console --project YourProjectName
+               </code></pre>
+               <p>
+                  The template creates a simple <samp>"Hello World"</samp> application, has a class <code>Program</code> with a single static method <code>Main</code>, that calls the static method <code>Console::writeLine(String $string)</code> which writes data to the output stream, followed by a new line terminator.
+               </p>
+               <pre><code class="language-php">
+                  &lt;?php
+
+                  namespace Application;
+
+                  use DevNet\System\IO\Console;
+
+                  class Program
+                  {
+                     public static function main(array $args = [])
+                     {
+                        Console::writeLine("Hello World!");
+                     }
+                  }
+               </code></pre>
+               <h3>Run the console application</h3>
+               <p>
+                  To run the application, run the following command in the Terminal :
+               </p>
+               <pre class="terminal rounded"><code>
+devnet run
+               </code></pre>
+               <p>
+                  The program displays <samp>"Hello World!"</samp> and ends.
+               </p>
+               <pre class="terminal rounded"><code>
+devnet run
+Hello World!
+               </code></pre>
+               <h3>Command line arguments</h3>
+               <p>
+                  At the runtime, the input arguments are passed to the parameter <code>$args</code> of the static method <code>main(array $args)</code> in form of indexed array, and to handle these arguments just handle the values of the parameter <code>$args</code>.
+               </p>
+               <p>
+                  The following example, shows a simple code that handle the input arguments, it stores the value of the first argument of the array <code>$args</code> into the variable <code>$name</code>, using Null Coalescing operator, if the it is not set, it will set to the default value <code>"world"</code>, then pass it to the static method <code>write(string $string, ?array arguments)</code> to write the content <samp>Hello {name}</samp> to terminal, using formatted string pattern.
+               </p>
+               <pre><code class="language-php">
+                  &lt;?php
+
+                  namespace Application;
+
+                  use DevNet\System\IO\Console;
+
+                  class Program
+                  {
+                     public static function main(array $args = [])
+                     {
+                        $name = $args[0] ?? "World";
+                        Console::write("Hello %s!", $name);
+                     }
+                  }
+               </code></pre>
+               <h5>Output Example</h5>
+               <pre class="terminal rounded"><code>
+devnet run Job
+Hello Job!
+               </code></pre>
+               <blockquote>
+                  <p>
+                     <b>Note:</b> The static method <code>write</code> does not insert a new line at the end of the text, use the escape sequence <code>\n</code> or use the static method <code>writeLine</code> instead.
+                  </p>
+               </blockquote>
+               <h3>Console input</h3>
+               <p>
+                  The static method <code>Console::readLine(?string $value)</code> reads the next line of characters from the console input stream, and returns it as a string data, it will pause the program execution, until the user type a data and presses the Enter key, optionally can write as text befor reading the input user.
+               </p>
+               <p>
+                  The following example code, displays a prompt in the terminal asking the user's name, and after the user input his name followed by the Enter key, it will return a hello message to the user by his name.
+               </p>
+               <pre><code class="language-php">
+                  &lt;?php
+
+                  namespace Application;
+
+                  use DevNet\System\IO\Console;
+
+                  class Program
+                  {
+                     public static function main(array $args = [])
+                     {
+                        Console::writeLine("What is your name?");
+                        $name = Console::readLine();
+                        Console::writeLine("Hello {$name}!");
+                     }
+                  }
+               </code></pre>
+               <h5>Output Example</h5>
+               <pre class="terminal rounded"><code>
+devnet run
+What is your name?
+Job
+Hello Job!
+                  </code></pre>
+               <h3>Console Color</h3>
+               <p>
+                  The <code>Console</code> class has the static methodes <code>foregroundColor(int $colorCode)</code> and <code>backgroundColor(int $colorCode)</code> to set the foreground and background color of the console output respectively, and the static method <code>ResetColor()</code> to restore the output system to the original console color.
+               </p>
+               <p>
+                  The <code>ConsoleColor</code> class has a list of color constants that are supported by the system, each constant hold a color code value, this will help to set the color by name without need to remember the color code, like in the folowing example:
+               </p>
+               <pre><code class="language-php">
+                  &lt;?php
+
+                  namespace Application;
+
+                  use DevNet\System\IO\Console;
+                  use DevNet\System\IO\ConsoleColor;
+
+                  class Program
+                  {
+                     public static function main(array $args = [])
+                     {
+                        Console::foregroundColor(ConsoleColor::Yellow);
+                        Console::write("Hello");
+                        Console::backgroundColor(ConsoleColor::Magenta);
+                        Console::writeLine(" World!");
+                        Console::resetColor();
+                     }
+                  }
+               </code></pre>
+               <h5>Output Example</h5>
+               <pre class="terminal rounded"><code>
+devnet run
+<code style="color: yellow;">Hello</code> <code style="color: yellow; background-color: magenta;">World!</code>
+               </code></pre>
+               <h5>List of colors</h5>
+               <p>
+                  ConsoleColor class specifies constants that define foreground and background colors for the console.
+               </p>
+               <table class="table">
+                  <thead>
+                     <tr>
+                        <th scope="col">Code</th>
+                        <th scope="col">Name</th>
+                        <th scope="col" class="text-center">Foreground</th>
+                        <th scope="col" class="text-center">Background</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <th scope="row">0</th>
+                        <td>Black</td>
+                        <td class="text-center">Yes</td>
+                        <td class="text-center">Yes</td>
+                     </tr>
+                     <tr>
+                        <th scope="row">1</th>
+                        <td>Grey</td>
+                        <td class="text-center">Yes</td>
+                        <td class="text-center">No</td>
+                     </tr>
+                     <tr>
+                        <th scope="row">2</th>
+                        <td>Red</td>
+                        <td class="text-center">Yes</td>
+                        <td class="text-center">Yes</td>
+                     </tr>
+                     <tr>
+                        <th scope="row">3</th>
+                        <td>Magenta</td>
+                        <td class="text-center">Yes</td>
+                        <td class="text-center">Yes</td>
+                     </tr>
+                     <tr>
+                        <th scope="row">4</th>
+                        <td>Blue</td>
+                        <td class="text-center">Yes</td>
+                        <td class="text-center">Yes</td>
+                     </tr>
+                     <tr>
+                        <th scope="row">5</th>
+                        <td>Cyan</td>
+                        <td class="text-center">Yes</td>
+                        <td class="text-center">Yes</td>
+                     </tr>
+                     <tr>
+                        <th scope="row">6</th>
+                        <td>Green</td>
+                        <td class="text-center">Yes</td>
+                        <td class="text-center">Yes</td>
+                     </tr>
+                     <tr>
+                        <th scope="row">7</th>
+                        <td>Yellow</td>
+                        <td class="text-center">Yes</td>
+                        <td class="text-center">Yes</td>
+                     </tr>
+                     <tr>
+                        <th scope="row">8</th>
+                        <td>LightGray</td>
+                        <td class="text-center">Yes</td>
+                        <td class="text-center">No</td>
+                     </tr>
+                     <tr>
+                        <th scope="row">9</th>
+                        <td>LightRed</td>
+                        <td class="text-center">Yes</td>
+                        <td class="text-center">No</td>
+                     </tr>
+                     <tr>
+                        <th scope="row">10</th>
+                        <td>LightMagenta</td>
+                        <td class="text-center">Yes</td>
+                        <td class="text-center">No</td>
+                     </tr>
+                     <tr>
+                        <th scope="row">11</th>
+                        <td>LightBlue</td>
+                        <td class="text-center">Yes</td>
+                        <td class="text-center">No</td>
+                     </tr>
+                     <tr>
+                        <th scope="row">12</th>
+                        <td>LightCyan</td>
+                        <td class="text-center">Yes</td>
+                        <td class="text-center">No</td>
+                     </tr>
+                     <tr>
+                        <th scope="row">13</th>
+                        <td>LightGreen</td>
+                        <td class="text-center">Yes</td>
+                        <td class="text-center">No</td>
+                     </tr>
+                     <tr>
+                        <th scope="row">14</th>
+                        <td>LightYellow</td>
+                        <td class="text-center">Yes</td>
+                        <td class="text-center">No</td>
+                     </tr>
+                     <tr>
+                        <th scope="row">15</th>
+                        <td>White</td>
+                        <td class="text-center">Yes</td>
+                        <td class="text-center">Yes</td>
+                     </tr>
+                  </tbody>
+               </table>
+               <footer>
+                  <nav class="no-print" aria-label="Page navigation">
+                     <ul class="nav-page">
+                        <li class="nav-page-item">
+                           <a class="nav-page-link" href="start.html">
+                              <i class="chevron left"></i> Previous
+                           </a>
+                        </li>
+                        <li class="nav-page-item">
+                           <a class="nav-page-link" href="../fundamentals/overview.html">
+                              Next <i class="chevron right"></i>
+                           </a>
+                        </li>
+                     </ul>
+                  </nav>
+               </footer>
+            </article>
+         </div>
+      </div>
+   </main>
+   <footer class="border-top footer text-muted bg-white">
+      <div class="container">
+         © 2020 - DevNet by Mohammed Moussaoui.
+      </div>
+   </footer>
+   <script src="../js/bootstrap.bundle.min.js"></script>
+   <script src="../js/prism.js"></script>
+</body>
+</html>

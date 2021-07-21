@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="../css/bootstrap.min.css">
+   <link rel="stylesheet" href="../css/prism.css">
+   <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+   <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+         <div class="container">
+            <a class="navbar-brand" href="../index.html">DevNet</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                     <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="../index.html">Documentation</a>
+                  </li>
+               </ul>
+               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Versions
+                     </a>
+                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">v1.0.0</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </header>
+   <main role="main" class="pb-3 bg-white">
+      <br>
+      <div class="container">
+         <div class="row">
+            <aside style="width: 260px;">
+               <nav id="accordion">
+                  <a href="" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><span class="arrow"></span>CLI</a>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../cli/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../cli/start.html">Get Started</a></li>
+                        <li><a class="nav-link text-dark" href="../cli/console.html">Console application</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"><span class="arrow"></span>Fundamentals</a>
+                  <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../fundamentals/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="#">Generic Collections</a></li>
+                        <li><a class="nav-link text-dark" href="#">Event Delegat</a></li>
+                        <li><a class="nav-link text-dark" href="#">Async Tasks</a></li>
+                        <li><a class="nav-link text-dark" href="#">Extension Method</a></li>
+                        <li><a class="nav-link text-dark" href="#">Linq data query</a></li>
+                        <li><a class="nav-link text-dark" href="#">Database Access Object</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"><span class="arrow"></span>Core</a>
+                  <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="start.html">Get Started</a></li>
+                        <li><a class="nav-link text-dark" href="middleware.html">Middleware</a></li>
+                        <li><a class="nav-link text-dark" href="routing.html">Routing</a></li>
+                        <li><a class="nav-link text-dark fw-bold" href="dependency.html">Dependency injection</a></li>
+                        <li><a class="nav-link text-dark" href="exception.html">Error Handling</a></li>
+                        <li><a class="nav-link text-dark" href="#">Http message</a></li>
+                        <li><a class="nav-link text-dark" href="#">Security</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><span class="arrow"></span>MVC</a>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../mvc/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../mvc/start.html">Get Started</a></li>
+                        <li><a class="nav-link text-dark" href="../mvc/controller.html">Controller</a></li>
+                        <li><a class="nav-link text-dark" href="../mvc/view.html">View</a></li>
+                        <li><a class="nav-link text-dark" href="../mvc/layout.html">Layout</a></li>
+                        <li><a class="nav-link text-dark" href="../mvc/filters.html">Filters</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><span class="arrow"></span>Entity ORM</a>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../entity/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../entity/model.html">Model</a></li>
+                        <li><a class="nav-link text-dark" href="../entity/querying.html">Querying Data</a></li>
+                        <li><a class="nav-link text-dark" href="../entity/saving.html#4">Saving Data</a></li>
+                        <li><a class="nav-link text-dark" href="../entity/relationships.html">Relationships</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"><span class="arrow"></span>Identity Manager</a>
+                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../identity/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../identity/data.html">User Data</a></li>
+                        <li><a class="nav-link text-dark" href="../identity/authentication.html">User Authentication</a></li>
+                        <li><a class="nav-link text-dark" href="../identity/roles.html">User Roles</a></li>
+                     </ul>
+                  </div>
+               </nav>
+            </aside>
+            <article class="flex-grow-1" style="width: 400px;">
+               <h1>Dependency Injection</h1>
+               <hr>
+               <p>
+                  A dependency is an object that another object depends on, and Dependency injection (DI) is a technique for achieving loose coupling between objects and dependencies, rather than directly instantiating dependencies, or using static references, most often the dependency objects are provided to the class which depend on, via constructor injection declaration, allowing them to follow the Explicit Dependencies Principle.
+               </p>
+               <pre><code class="language-php">
+                  class MyDependency
+                  {
+                     public function getId() : int
+                     {
+                        return return spl_object_id($this);
+                     }
+                  }
+               </code></pre>
+               <p>
+                  The class <code>MyDependency</code> is a dependency for the class <code>MyService</code>
+               </p>
+               <pre><code class="language-php">
+                  &lt;?php
+                  
+                  class MyService implement IMyService
+                  {
+                     Private MyDependency $Dependency;
+
+                     public function __construct(MyDependency $dependency)
+                     {
+                        $this->Dependency = $dependency;
+                     }
+
+                     public function getId() : int
+                     {
+                        return spl_object_id($this);
+                     }
+
+                     public function getDependencyId() : int
+                     {
+                        return $this->Dependency->getId();
+                     }
+                  }
+               </code></pre>
+               <h3>Service Container</h3>
+               <p>
+                  Service Container is an implemention of Dependency Injection Container (aka Inversion of Controller Container) which is a system implementing automatic dependency injection, it creates an object of the specified class as services and also injects all the dependency objects through their constructor by its type, and manages its lifetime, whether Transient or Singleton lifetime.
+               </p>
+               <h5>Transient</h5>
+               <p>
+                  Transient lifetime services are created each time they're requested from the service container. This lifetime works best for lightweight, stateless services.
+               </p>
+               <h5>Singleton</h5>
+               <p>
+                  Singleton lifetime services are created only once and Every subsequent request uses the same instance in the application life cycle.
+               </p>
+               <h3>Registring services</h3>
+               <p>
+                  Typically the <code>configureServices(IServiceCollection $services)</code> method of the <code>startup</code> class is responsible for defining the services that will be used throw your application without hard coding, Initially the <code>IServiceCollection</code> provided to configure services with complex dependencies by using one of the following methods:
+                  <ul>
+                     <li>
+                        <code>addSingleton(String $serviceType, String|Object|Closure $service);</code>
+                     </li>
+                     <li><code>addTransient(String $serviceType, String|Object|Closure $service);</code></li>
+                  </ul>
+               </p>
+               <p>
+                  <code>addTransient</code> method to define Transient lifetime service and <code>addSingleton</code> method to define Singleton lifetime services, also has handful extension methods of prebuid-services, defined in <code>DependencyExtensions</code> class.
+               </p>
+               <p>
+                  Services are defined using the same service type class, parent class or interface that the service is implementing, which will be used later to call the service from the service provider.
+               </p>
+               <p>
+                  The following code shows an example of registring two services, <code>MyDependency</code> registred with Transient lifetime, defined by the same service type, and <code>MyService</code> with singleton lifetime defined by <code>IMyService</code> interface:
+               </p>
+               <pre><code class="language-php">
+                  &lt;?php
+                  
+                  use DevNet\Core\Dependency\IServiceCollection;
+                  use DevNet\Core\Dispatcher\IApplicationBuilder;
+                  use DevNet\Core\Extensions\ServiceCollectionExtensions;
+                  use DevNet\Core\Extensions\ApplicationBuilderExtensions;
+                  use Appplication\Services\IMyService;
+                  use Appplication\Services\MyService;
+                  use Appplication\Services\MyDependency;
+
+                  class Startup
+                  {
+                     public function configureServices(IServiceCollection $services)
+                     {
+                        services->addTransient(MyDependency::class);
+
+                        services->addSingleton(IMyService::class, MyService::class);
+                     }
+                     ...
+                  }
+               </code></pre>
+               <h3>Requesting Services</h3>
+               <p>
+                  The services are available within <code>IServiceProvider</code> which can be requested from <code>HttpContext</code>, exposed through the RequestServices property, and only dependencies those are satisfied by the types found in RequestServices can be returned, using the method <code>getService</code>.
+               </p>
+               <p>
+                  The code below shows an example of requesting two services registred in the previous example:
+               </p>
+               <pre><code class="language-php">
+                  ...
+                  $app->useEndpoint(function($routes) {
+                     $routes->mapGet("/service", function(HttpContext $context) : Task
+                     {
+                        $service1 = $context->RequestServices->getService(IMyService::class);
+                        $service2 = $context->RequestServices->getService(IMyService::class);
+                        
+                        $output = "Service Id: ". $service1->getId()." & Dependency Id: ". $service1->DependencyId()."&lt;br>";
+                        $output .= "Service Id: ". $service2->getId()." & Dependency Id: ". $service2->DependencyId();
+                        
+                        $context->Response->Body->write($output);
+                        
+                        return Task::completedTask();
+                     });
+                  });
+               </code></pre>
+               <h5>Output Example</h5>
+               <pre class="language-html"><code>
+                  Service Id: 1 & Dependency Id: 1
+                  Service Id: 1 & Dependency Id: 2
+               </code></pre>
+               <p>
+                  The result of the example above, shows that the service of type <code>IService</code> has the same <code>Id</code> whatever how many time we call it from the container, it stay the same, becasue it was registred with <b>Singleton lifetime</b>, however the service of type <code>MyDependety</code> changes its <code>Id</code> every time we call it, becasue it was registred with <b>Transient lifetime</b>.
+               </p>
+               <h3>Registring Services With Custom Factory</h3>
+               <p>
+                  Devnet Service container use Service Activator to create your dependency when you call it, but if you want to resolve the instanciation of your dependency in your way, DevNet service container allows you to implement your own factory using closure function that has <code>IServiceProvider</code> parameter to allow you to call any service registred within <code>IServiceCollection</code> and use it as a dependency for your service creation proccess as shown in the following example:
+               </p>
+               <pre><code class="language-php">
+                  &lt;?php
+                  
+                  use DevNet\Core\Dependency\IServiceCollection;
+                  use DevNet\Core\Dispatcher\IApplicationBuilder;
+                  use DevNet\Core\Extensions\ServiceCollectionExtensions;
+                  use DevNet\Core\Extensions\ApplicationBuilderExtensions;
+                  use Appplication\Services\IMyService;
+                  use Appplication\Services\MyService;
+                  use Appplication\Services\MyDependency;
+
+                  class Startup
+                  {
+                     public function configureServices(IServiceCollection $services)
+                     {
+                        services->addSingleton(IMyService::class, 
+                           fn($provider) => new MyService($provider->getService(MyDependency::class)));
+                        
+                        services->addTransient(MyDependency::class);
+                     }
+                     ...
+                  }
+               </code></pre>
+               <h3>Requesting Services Through Controller</h3>
+               <p>
+                  Services are injected into controllers as a constructor parameter, during the creation of the controller, the service activator resolves the services from <code>IServiceCollection</code> that matches the parameter types of the controller's constructor and injectes them into it.
+               </p>
+               <pre><code class="language-php">
+                  &lt;?php
+                  
+                  namespace Application\Controllers;
+
+                  use DevNet\Core\Controller\AbstractController;
+                  use DevNet\Core\Controller\IActionResult;
+                  use Application\Services\IMyService;
+
+                  class HelloController extends AbstractController
+                  {
+                     private IMyService $MyService;
+
+                     public function __construct(IMyService $myService)
+                     {
+                        $this->MyService = $myService;
+                     }
+                     ...
+                  }
+               </code></pre>
+               <footer>
+                  <nav class="no-print" aria-label="Page navigation">
+                     <ul class="nav-page">
+                        <li class="nav-page-item">
+                           <a class="nav-page-link" href="routing.html">
+                              <i class="chevron left"></i> Previous
+                           </a>
+                        </li>
+                        <li class="nav-page-item">
+                           <a class="nav-page-link" href="exception.html">
+                              Next <i class="chevron right"></i>
+                           </a>
+                        </li>
+                     </ul>
+                  </nav>
+               </footer>
+            </article>
+         </div>
+      </div>
+   </main>
+   <footer class="border-top footer text-muted bg-white">
+      <div class="container">
+         © 2020 - DevNet by Mohammed Moussaoui.
+      </div>
+   </footer>
+   <script src="../js/bootstrap.bundle.min.js"></script>
+   <script src="../js/prism.js"></script>
+</body>
+</html>

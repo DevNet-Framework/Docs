@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="../css/bootstrap.min.css">
+   <link rel="stylesheet" href="../css/prism.css">
+   <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+   <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+         <div class="container">
+            <a class="navbar-brand" href="../index.html">DevNet</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                     <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="../index.html">Documentation</a>
+                  </li>
+               </ul>
+               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Versions
+                     </a>
+                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">v.0.0</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </header>
+   <main role="main" class="pb-3 bg-white">
+      <br>
+      <div class="container">
+         <div class="row">
+            <aside style="width: 260px;">
+               <nav id="accordion">
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><span class="arrow"></span>CLI</a>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../cli/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../cli/start.html">Get Started</a></li>
+                        <li><a class="nav-link text-dark" href="../cli/console.html">Console application</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"><span class="arrow"></span>Fundamentals</a>
+                  <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../fundamentals/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="#">Generic Collections</a></li>
+                        <li><a class="nav-link text-dark" href="#">Event Delegat</a></li>
+                        <li><a class="nav-link text-dark" href="#">Async Tasks</a></li>
+                        <li><a class="nav-link text-dark" href="#">Extension Method</a></li>
+                        <li><a class="nav-link text-dark" href="#">Linq data query</a></li>
+                        <li><a class="nav-link text-dark" href="#">Database Access Object</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"><span class="arrow"></span>Core</a>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../core/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../core/start.html">Get Started</a></li>
+                        <li><a class="nav-link text-dark" href="../core/middleware.html">Middleware</a></li>
+                        <li><a class="nav-link text-dark" href="../core/routing.html">Routing</a></li>
+                        <li><a class="nav-link text-dark" href="../core/dependency.html">Dependency injection</a></li>
+                        <li><a class="nav-link text-dark" href="../core/exception.html">Error Handling</a></li>
+                        <li><a class="nav-link text-dark" href="#">Http message</a></li>
+                        <li><a class="nav-link text-dark" href="#">Security</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><span class="arrow"></span>MVC</a>
+                  <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark fw-bold" href="start.html">Get Started</a></li>
+                        <li><a class="nav-link text-dark" href="controller.html">Controller</a></li>
+                        <li><a class="nav-link text-dark" href="view.html">View</a></li>
+                        <li><a class="nav-link text-dark" href="layout.html">Layout</a></li>
+                        <li><a class="nav-link text-dark" href="filters.html">Filters</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><span class="arrow"></span>Entity ORM</a>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../entity/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../entity/model.html">Model</a></li>
+                        <li><a class="nav-link text-dark" href="../entity/querying.html">Querying Data</a></li>
+                        <li><a class="nav-link text-dark" href="../entity/saving.html#4">Saving Data</a></li>
+                        <li><a class="nav-link text-dark" href="../entity/relationships.html">Relationships</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"><span class="arrow"></span>Identity Manager</a>
+                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../identity/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../identity/data.html">User Data</a></li>
+                        <li><a class="nav-link text-dark" href="../identity/authentication.html">User Authentication</a></li>
+                        <li><a class="nav-link text-dark" href="../identity/roles.html">User Roles</a></li>
+                     </ul>
+                  </div>
+               </nav>
+            </aside>
+            <article class="flex-grow-1" style="width: 400px;">
+               <h1>Get Started</h1>
+               <hr>
+               <p>
+                  To create a MVC Web Application, Open the terminal then enter the following command:
+               </p>
+               <pre class="terminal rounded"><code>
+devnet new mvc --project YourProjectName
+               </code></pre>
+               <p>
+                  Or use composer:
+               </p>
+               <pre class="terminal rounded"><code>
+composer create-project devnet/mvc YourProjectName
+               </code></pre>
+               <br>
+               <h3>Project structure</h3>
+               <p>
+                  This command will create a mvc web project with the following structure:
+               </p>
+               <pre><code class="language-html">
+                  mvc-project/
+                  ├─ Controllers/
+                  │  ├─ HomeController.php
+                  │  └─ AccountController.php
+                  ├─ Models/
+                  │  ├─ LoginForm.php
+                  │  ├─ RegisterForm.php
+                  │  └─ User.php
+                  ├─ Views/
+                  │  ├─ account/
+                  │  │  ├─ index.phtml
+                  │  │  ├─ login.phtml
+                  │  │  └─ register.phtml
+                  │  ├─ home/
+                  │  │  └─ index.phtml
+                  │  └─ Shared/
+                  │     ├─ layout.phtml
+                  │     └─ navbar.phtml
+                  ├─ webroot/
+                  │  ├─ css/
+                  │  ├─ js/
+                  │  ├─ lib/
+                  │  ├─ .htaccess
+                  │  ├─ index.php
+                  │  └─ Web.config
+                  ├─ ...
+                  ├─ Program.php
+                  ├─ project.phproj
+                  ├─ Startup.php
+                  └─ settings.json
+               </pre></code>
+               <br>
+               <h3>MVC Registraction</h3>
+               <p>
+                  Befor using MVC components, make sure the service MVC is registered inside the <code>configureServices</code> method of <code>Startup</code> class, by calling the extension method <code>addMvc()</code> of the instance of the type <code>IServiceCollection</code>.
+               </p>
+               <pre><code class="language-php">
+                  &lt;?php
+                  
+                  namespace Application;
+                  
+                  use DevNet\Core\Dependency\IServiceCollection;
+                  use DevNet\Core\Dispatcher\IApplicationBuilder;
+                  use DevNet\Core\Extensions\DependencyExtensions;
+                  use DevNet\Core\Extensions\HostingExtensions;
+                  
+                  class Startup
+                  {
+                     public function configureServices(IServiceCollection $services)
+                     {
+                        $services->addMvc();
+                     }
+                      ...
+                  }
+               </code></pre>
+               <br>
+               <h3>Conventional Routing</h3>
+               <p>
+                  The default routing of MVC application is Conventional Routing, only one generic route template : <code>{controller=Home}/{action=Index}/{id?}</code> which can handle all url requests, by parsing it into 3 segments:<br>
+                  <ol>
+                     <li><b>Controller name:</b> default name is "home"</li>
+                     <li><b>Action name:</b> default name is "index"</li>
+                     <li><b>Id parameter:</b> is optionnal</li>
+                  </ol>
+               </p>
+               <p>
+                  In order to use the Conventional Routing, you have to make sure that the Middlewars <code>RouterMiddlewar</code> and <code>EndpointMiddlewar</code> are added to the pipeline in the method <code>configure(IApplicationBuilder $app)</code> of the <code>Startup</code> class, with the help of the Extension methods <code>addRouter()</code> and <code>addEndpoint(RouteCollection $routes)</code>.
+               </p>
+               <pre><code class="language-php">
+                  class Startup
+                  {
+                     ...                     
+                     public function configure(IApplicationBuilder $app)
+                     {
+                        $app->useRouter();
+
+                        // Middlewars here
+                        
+                        $app->useEndpoint(function($routes)
+                        {
+                           $routes->mapRoute("default", "{controller=Home}/{action=Index}/{id?}");
+                        });
+                     }
+                  }
+               </code></pre>
+               <blockquote>
+                  <p>
+                     <b>Note:</b> if you add a Literal route with Conventional route make sure to put the conventional route at the buttom of the routes list, because it has a greedy pattern and will catch all the urls.
+                  </p>
+               </blockquote>
+               <h3 id="2">Development Server</h3>
+               <p>
+                  DevNet framework use PHP Built-in development server, as default server to run the DevNet web application, assuming <code>./webroot/</code> is public accessible directory with <code>index.php</code> file, you can start the development server by running the following command in the terminal:
+               </p>
+               <pre class="terminal rounded"><code>
+devnet run
+               </code></pre>
+               <p>
+                  This will start the development server at <a href="http://localhost:8000">http://localhost:8000</a>
+               </p>
+               <pre class="terminal rounded"><code>
+devnet run
+[Sat Dec 12 15:10:02 2020] PHP 8.0.0 Development Server (http://localhost:8000) started
+               </code></pre>
+               <p>
+                  Otherwize you can also start the Built-in PHP server, by runing the following PHP command line in the terminal:
+               </p>
+               <pre class="terminal rounded"><code>
+php -S localhost:8000 -t webroot
+               </code></pre>
+               <p>
+                  The following image shows the application result in the browser:
+               </p>
+               <img src="../images/welcome.jpg" alt="Web app home page" width="100%" height="auto">
+               <br><br>
+               <footer>
+                  <nav class="no-print" aria-label="Page navigation">
+                     <ul class="nav-page">
+                        <li class="nav-page-item">
+                           <a class="nav-page-link" href="start.html">
+                              <i class="chevron left"></i> Previous
+                           </a>
+                        </li>
+                        <li class="nav-page-item">
+                           <a class="nav-page-link" href="controller.html">
+                              Next <i class="chevron right"></i>
+                           </a>
+                        </li>
+                     </ul>
+                  </nav>
+               </footer>
+            </article>
+         </div>
+      </div>
+   </main>
+   <footer class="border-top footer text-muted bg-white">
+      <div class="container">
+         © 2020 - DevNet by Mohammed Moussaoui.
+      </div>
+   </footer>
+   <script src="../js/bootstrap.bundle.min.js"></script>
+   <script src="../js/prism.js"></script>
+</body>
+</html>

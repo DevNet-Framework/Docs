@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="../css/bootstrap.min.css">
+   <link rel="stylesheet" href="../css/prism.css">
+   <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+   <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+         <div class="container">
+            <a class="navbar-brand" href="../index.html">DevNet</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                     <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="../index.html">Documentation</a>
+                  </li>
+               </ul>
+               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Versions
+                     </a>
+                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">v1.0.0</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </header>
+   <main role="main" class="pb-3 bg-white">
+      <br>
+      <div class="container">
+         <div class="row">
+            <aside style="width: 260px;">
+               <nav id="accordion">
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><span class="arrow"></span>CLI</a>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../cli/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../cli/start.html">Get Started</a></li>
+                        <li><a class="nav-link text-dark" href="../cli/console.html">Console application</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"><span class="arrow"></span>Fundamentals</a>
+                  <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../fundamentals/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="#">Generic Collections</a></li>
+                        <li><a class="nav-link text-dark" href="#">Event Delegat</a></li>
+                        <li><a class="nav-link text-dark" href="#">Async Tasks</a></li>
+                        <li><a class="nav-link text-dark" href="#">Extension Method</a></li>
+                        <li><a class="nav-link text-dark" href="#">Linq data query</a></li>
+                        <li><a class="nav-link text-dark" href="#">Database Access Object</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"><span class="arrow"></span>Core</a>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../core/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../core/start.html">Get Started</a></li>
+                        <li><a class="nav-link text-dark" href="../core/middleware.html">Middleware</a></li>
+                        <li><a class="nav-link text-dark" href="../core/routing.html">Routing</a></li>
+                        <li><a class="nav-link text-dark" href="../core/dependency.html">Dependency injection</a></li>
+                        <li><a class="nav-link text-dark" href="../core/exception.html">Error Handling</a></li>
+                        <li><a class="nav-link text-dark" href="#">Http message</a></li>
+                        <li><a class="nav-link text-dark" href="#">Security</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><span class="arrow"></span>MVC</a>
+                  <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="start.html">Get Started</a></li>
+                        <li><a class="nav-link text-dark fw-bold" href="controller.html">Controller</a></li>
+                        <li><a class="nav-link text-dark" href="view.html">View</a></li>
+                        <li><a class="nav-link text-dark" href="layout.html">Layout</a></li>
+                        <li><a class="nav-link text-dark" href="filters.html">Filters</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><span class="arrow"></span>Entity ORM</a>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../entity/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../entity/model.html">Model</a></li>
+                        <li><a class="nav-link text-dark" href="../entity/querying.html">Querying Data</a></li>
+                        <li><a class="nav-link text-dark" href="../entity/saving.html#4">Saving Data</a></li>
+                        <li><a class="nav-link text-dark" href="../entity/relationships.html">Relationships</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"><span class="arrow"></span>Identity Manager</a>
+                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../identity/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../identity/data.html">User Data</a></li>
+                        <li><a class="nav-link text-dark" href="../identity/authentication.html">User Authentication</a></li>
+                        <li><a class="nav-link text-dark" href="../identity/roles.html">User Roles</a></li>
+                     </ul>
+                  </div>
+               </nav>
+            </aside>
+            <article class="flex-grow-1" style="width: 400px;">
+               <h1>Controller</h1>
+               <hr>
+               <p>
+                  Controller class can be created manually inside "Controllers" folder or by using DevNet command-line:
+               </p>
+               <pre class="terminal rounded"><code>
+devnet add controller --name HelloController
+               </code></pre>
+               <p>
+                  The class below represent an example of Controller class named HelloController extends a base Controller class to inherit some MVC features, and has one action method called index and return an instatence of IActionResult, with a content of <samp>"Hello World!"</samp> as a response.<br>
+               </p>
+               <pre><code class="language-php">
+                  &lt;?php
+
+                  namespace Application\Controllers;
+
+                  use DevNet\Core\Controller\AbstractController;
+                  use DevNet\Core\Controller\IActionResult;
+
+                  class HelloController extends AbstractController
+                  {
+                     public function index() : IActionResult
+                     {
+                        return $this->content("Hello World!");
+                     }
+                  }
+               </code></pre>
+               <h3>Action Result</h3>
+               <p>
+                  The following table demonstrates a list of route templates examples and their behaviors:
+               </p>
+               <table class="table">
+                  <thead>
+                  <tr>
+                     <th scope="col">Method</th>
+                     <th scope="col">Parameters</th>
+                     <th scope="col">Discription</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                     <td>content</td>
+                     <td>(string $content, int $status)</td>
+                     <td>return a plain text</td>
+                  </tr>
+                  <tr>
+                     <td>json</td>
+                     <td>(array $data, int $status)</td>
+                     <td>return JSON data</td>
+                  </tr>
+                  <tr>
+                     <td>view</td>
+                     <td>(string $viewPath, ?object $model)</td>
+                     <td>return HTML content</td>
+                  </tr>
+                  <tr>
+                     <td>redirect</td>
+                     <td>(string $urlPath)</td>
+                     <td>redirect the request to the geving path</td>
+                  </tr>
+                  <tr>
+                     <td>forbid</td>
+                     <td>()</td>
+                     <td>forbid access to a particular route</td>
+                  </tr>
+                  </tbody>
+               </table>
+               <h3>Action Method Parameters</h3>
+               <p>
+                  Every action methods can have parameters as input data and can be primitive data type or complex type parameters, and
+                  by default, the parameters values are retrieved from the request's data collection, such as query string values, name/values pairs for form data or cookie values, Model binding automatically maps the request's data to the action method parameters if both names match.
+               </p>
+               <pre><code class="language-php">
+                  &lt;?php
+
+                  namespace Application\Controllers;
+
+                  use DevNet\Core\Controller\AbstractController;
+                  use DevNet\Core\Controller\IActionResult;
+
+                  class StudentController extends AbstractController
+                  {
+                     public function show(int $id) : IActionResult
+                     {
+                        return $this->content("The student Id You have requested is: {$id}");
+                     }
+                  }
+               </code></pre>
+               <footer>
+                  <nav class="no-print" aria-label="Page navigation">
+                     <ul class="nav-page">
+                        <li class="nav-page-item">
+                           <a class="nav-page-link" href="overview.html">
+                              <i class="chevron left"></i> Previous
+                           </a>
+                        </li>
+                        <li class="nav-page-item">
+                           <a class="nav-page-link" href="view.html">
+                              Next <i class="chevron right"></i>
+                           </a>
+                        </li>
+                     </ul>
+                  </nav>
+               </footer>
+            </article>
+         </main>
+      </div>
+   </div>
+   <footer class="border-top footer text-muted bg-white">
+      <div class="container">
+         © 2020 - DevNet by Mohammed Moussaoui.
+      </div>
+   </footer>
+   <script src="../js/bootstrap.bundle.min.js"></script>
+   <script src="../js/prism.js"></script>
+</body>
+</html>

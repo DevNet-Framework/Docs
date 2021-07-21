@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="../css/bootstrap.min.css">
+   <link rel="stylesheet" href="../css/prism.css">
+   <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+   <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+         <div class="container">
+            <a class="navbar-brand" href="../index.html">DevNet</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                     <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="../index.html">Documentation</a>
+                  </li>
+               </ul>
+               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Versions
+                     </a>
+                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">v1.0.0</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </header>
+   <main role="main" class="pb-3 bg-white">
+      <br>
+      <div class="container">
+         <div class="row">
+            <aside style="width: 260px;">
+               <nav id="accordion">
+                  <a href="#" class="menu" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><span class="arrow"></span>CLI</a>
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark fw-bold" href="start.html">Get Started</a></li>
+                        <li><a class="nav-link text-dark" href="console.html">Console application</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"><span class="arrow"></span>Fundamentals</a>
+                  <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../fundamentals/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="#">Generic Collections</a></li>
+                        <li><a class="nav-link text-dark" href="#">Event Delegat</a></li>
+                        <li><a class="nav-link text-dark" href="#">Async Tasks</a></li>
+                        <li><a class="nav-link text-dark" href="#">Extension Method</a></li>
+                        <li><a class="nav-link text-dark" href="#">Linq data query</a></li>
+                        <li><a class="nav-link text-dark" href="#">Database Access Object</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"><span class="arrow"></span>Core</a>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../core/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../core/start.html">Get Started</a></li>
+                        <li><a class="nav-link text-dark" href="../core/middleware.html">Middleware</a></li>
+                        <li><a class="nav-link text-dark" href="../core/routing.html">Routing</a></li>
+                        <li><a class="nav-link text-dark" href="../core/dependency.html">Dependency injection</a></li>
+                        <li><a class="nav-link text-dark" href="../core/exception.html">Error Handling</a></li>
+                        <li><a class="nav-link text-dark" href="#">Http message</a></li>
+                        <li><a class="nav-link text-dark" href="#">Security</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><span class="arrow"></span>MVC</a>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../mvc/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../mvc/start.html">Get Started</a></li>
+                        <li><a class="nav-link text-dark" href="../mvc/controller.html">Controller</a></li>
+                        <li><a class="nav-link text-dark" href="../mvc/view.html">View</a></li>
+                        <li><a class="nav-link text-dark" href="../mvc/layout.html">Layout</a></li>
+                        <li><a class="nav-link text-dark" href="../mvc/filters.html">Filters</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><span class="arrow"></span>Entity ORM</a>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../entity/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../entity/model.html">Model</a></li>
+                        <li><a class="nav-link text-dark" href="../entity/querying.html">Querying Data</a></li>
+                        <li><a class="nav-link text-dark" href="../entity/saving.html#4">Saving Data</a></li>
+                        <li><a class="nav-link text-dark" href="../entity/relationships.html">Relationships</a></li>
+                     </ul>
+                  </div>
+                  <a href="#" class="menu collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"><span class="arrow"></span>Identity Manager</a>
+                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-bs-parent="#accordion">
+                     <ul class="sub-menu">
+                        <li><a class="nav-link text-dark" href="../identity/overview.html">Overview</a></li>
+                        <li><a class="nav-link text-dark" href="../identity/data.html">User Data</a></li>
+                        <li><a class="nav-link text-dark" href="../identity/authentication.html">User Authentication</a></li>
+                        <li><a class="nav-link text-dark" href="../identity/roles.html">User Roles</a></li>
+                     </ul>
+                  </div>
+               </nav>
+            </aside>
+            <article class="flex-grow-1" style="width: 400px;">
+               <h1>Get Started</h1>
+               <hr>
+               <p>
+                  In order to install DevNet Cli Globally, and Because DevNet is still in development, we need first to config composer global minimum-stability to development.
+               </p>
+               <p>
+                  So in the terminal type the following command:
+               </p>
+               <pre class="terminal rounded"><code>
+composer global config minimum-stability dev
+               </code></pre>
+               <p>
+                  Then force composer to prefer the stable version if is was available, like so:
+               </p>
+               <pre class="terminal rounded"><code>
+composer global config prefer-stable true
+               </code></pre>
+               <br>
+               <h3>Installation</h3>
+               <p>
+                  To Install DevNet CLI globally, run the following command in the terminal:
+               </p>
+               <pre class="terminal rounded"><code>
+composer global require devnet/cli
+               </code></pre>
+               <p>
+                  This will run a minimal installation of DevNet Framework that allows you to create a console app only, but optionally you can add other DevNet packages later, like Web Components and Entity ORM.
+               </p>
+               <br>
+               <h3>Uninstalling DevNet</h3>
+               <p>
+                  If DevNet CLI already installed, and the update went wrong, it's recommended to uninstall the older version of DevNet CLI and reinstall the new one.
+               </p>
+               <p>
+                  So to uninstall DevNet CLI, To uninstall DevNet Cli globally from your system, run the following command in the terminal:
+               </p>
+               <pre class="terminal rounded"><code>
+composer global remove devnet/cli
+               </code></pre>
+               <br>
+               <h3>Extending DevNet CLI</h3>
+               <p>
+                  Optionally you can extend DevNet CLI by installing DevNet templates add-ons, to be able to create projects other than console projects like Web API and MVC projects, using the DevNet command-line.
+               </p>
+               <p>
+                  So in your terminal you can add DevNet Templates like this:
+               </p>
+               <pre class="terminal rounded"><code>
+composer global require devnet/templates
+               </code></pre>
+               <br>
+               <h3>Using DevNet Command:</h3>
+               <p>
+                  For the first start you can run the devnet command with the option <code>--version</code> in your terminal, to check the DevNet Cli version and see if it was installed properly, like so:
+               </p>
+               <pre class="terminal rounded"><code>
+devnet --version
+               </code></pre>
+               <h5>Output</h5>
+               <pre class="terminal rounded"><code>
+DevNet command-line interface v1.0.0
+Copyright (c) DevNet
+               </code></pre>
+               <p>
+                  You can run also the devnet command with the option <code>--help</code> in your terminal, to show the help on how to use devent command-line tool, as shown below:
+               </p>
+               <pre class="terminal rounded"><code>
+devnet --help
+               </code></pre>
+               <h5>Output</h5>
+               <pre class="terminal rounded"><code>
+DevNet command-line interface v1.0.0
+Usage: devnet [options]
+
+Options:
+   --help      Show command line help.
+   --version   Show DevNet Cli version.
+   --path      Show DevNet runtime path.
+
+Usage: devnet [command] [arguments] [options]
+
+commands:
+   new   Create a new project
+   run   Run the DevNet applicaton
+   add   Add a template code file to the project
+
+Run 'devnet [command] --help' for more information on a command.
+               </code></pre>
+               <p>
+                  The Help shows a list of available commands and options that you can use with DevNet Cli.
+               </p>
+               <p>
+                  For more details about a command that you want to use, you can run it with the option --help like in the following example:
+               </p>
+               <pre class="terminal rounded"><code>
+devnet new --help
+               </code></pre>
+               <h5>Output</h5>
+               <pre class="terminal rounded"><code>
+Usage: devnet new [template] [arguments] [options]
+
+Options:
+   --help     Displays help for this command.
+   --project  Location to place the generated project.
+
+templates:
+   console    Console Applicatinon project
+   mvc        DevNet MVC Web Application Project
+   web        DevNet Web Application Project
+               </code></pre>
+               <p>
+                  The help shows a usage of the new command followed by the name of the project template that you want to create, and followed by options and arguments, and shows a list of options that you can use with the command and a list of templates that you can choose from to create your project.
+               </p>
+               <br>
+               <footer>
+                  <nav class="no-print" aria-label="Page navigation">
+                     <ul class="nav-page">
+                        <li class="nav-page-item">
+                           <a class="nav-page-link" href="../overview.html">
+                              <i class="chevron left"></i> Previous
+                           </a>
+                        </li>
+                        <li class="nav-page-item">
+                           <a class="nav-page-link" href="console.html">
+                              Next <i class="chevron right"></i>
+                           </a>
+                        </li>
+                     </ul>
+                  </nav>
+               </footer>
+            </article>
+         </div>
+      </div>
+   </main>
+   <footer class="border-top footer text-muted bg-white">
+      <div class="container">
+         © 2020 - DevNet by Mohammed Moussaoui.
+      </div>
+   </footer>
+   <script src="../js/bootstrap.bundle.min.js"></script>
+   <script src="../js/prism.js"></script>
+</body>
+</html>
